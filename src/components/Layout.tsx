@@ -1,7 +1,8 @@
-import { FC, ReactNode, useEffect } from "react";
+import { FC, ReactNode, useEffect, useMemo } from "react";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
 import Link from "next/link";
+import { routes } from "../constants/routes";
 
 interface IProps {
   children: ReactNode;
@@ -9,6 +10,15 @@ interface IProps {
 
 const Layout: FC<IProps> = ({ children }) => {
   const router = useRouter();
+
+  const currentRoutes = useMemo(
+    () =>
+      routes.map((item) => ({
+        ...item,
+        isActive: item.route === router.asPath,
+      })),
+    [router.asPath]
+  );
 
   useEffect(() => {
     const handleRouteChange = () => NProgress.start();
@@ -23,7 +33,7 @@ const Layout: FC<IProps> = ({ children }) => {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      <nav className="navbar navbar-dark bg-primary navbar-expand-lg sticky-top">
+      <nav className="navbar navbar-dark bg-primary navbar-expand-md sticky-top">
         <div className="container-fluid">
           <Link href={"/"}>
             <a className="navbar-brand" href="#">
@@ -43,48 +53,24 @@ const Layout: FC<IProps> = ({ children }) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link href={"/"}>
-                  <a className="nav-link active" aria-current="page">
-                    Introduction
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Objetive
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Grammar
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Activities
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Homework
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Evaluation
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Credits
-                </a>
-              </li>
+              {currentRoutes.map((item, key) => (
+                <li key={key} className="nav-item">
+                  <Link href={item.route}>
+                    <a
+                      className={"nav-link " + (item.isActive ? "active" : "")}
+                      aria-current="page"
+                      href="#"
+                    >
+                      {item.label}
+                    </a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </nav>
-      <div className="my-3">{children}</div>
+      <div className="my-3 container">{children}</div>
       <footer className="mt-auto bg-primary text-center text-lg-start text-white">
         <div className="text-center p-1">©2022 Dev Team SODIA OFF</div>
       </footer>
