@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { FC, useState } from "react";
+import MultipleOptions from "../src/components/forms/MultipleOptions";
 import Layout from "../src/components/Layout";
 
 const Activities: NextPage = () => {
@@ -302,6 +303,139 @@ const Activitie1: FC = () => {
   );
 };
 
-const activities = [<Activitie1 key={0} />];
+const Activitie2: FC = () => {
+  return (
+    <div>
+      <div className="card shadow">
+        <div className="d-flex justify-content-center">
+          <div className="h2">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div className="row mt-3">
+        <div className="col-8">
+          <div className="card shadow">
+            <div className="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
+                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
+                molestias hic possimus dolores harum sint quam fugit. Esse
+                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
+                Suscipit tenetur ea quis tempora, impedit culpa at delectus
+                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
+                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
+                molestias hic possimus dolores harum sint quam fugit. Esse
+                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
+                Suscipit tenetur ea quis tempora, impedit culpa at delectus
+                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
+                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
+                molestias hic possimus dolores harum sint quam fugit. Esse
+                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
+                Suscipit tenetur ea quis tempora, impedit culpa at delectus
+                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-4">
+          <Image src={require("../src/assets/images/Emma.svg")} alt="Sophie" />
+        </div>
+      </div>
+      <div className="card shadow d-flex flex-column">
+        <h3 className="card-title align-self-center">
+          Lorem ipsum dolor sit amet.
+        </h3>
+        <div className="card-body">
+          <div className="row">
+            <div className="col">
+              <MultipleOptions
+                id="1"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+            <div className="col">
+              <MultipleOptions
+                id="2"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+          </div>
+          <div className="row mt-3">
+            <div className="col">
+              <MultipleOptions
+                id="3"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+            <div className="col">
+              <MultipleOptions
+                id="4"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+          </div>
+          <div className="row mt-3">
+            <div className="col">
+              <MultipleOptions
+                id="5"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+            <div className="col d-flex justify-content-center align-items-center">
+              <div>
+                <button className="btn btn-success">Validate answers</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const activities = [<Activitie1 key={0} />, <Activitie2 key={0} />];
 
 export default Activities;
