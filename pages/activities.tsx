@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { FC, useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
+import YouTube from "react-youtube";
 import MultipleOptions from "../src/components/forms/MultipleOptions";
 import Layout from "../src/components/Layout";
 
@@ -737,11 +738,83 @@ const Activitie4: FC = () => {
   );
 };
 
+const Activitie5: FC = () => {
+  return (
+    <div>
+      <div className="card shadow">
+        <div className="d-flex justify-content-center">
+          <div className="h2">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div className="card card-body shadow mt-4">
+        <YouTube
+          title="OBJETO VIRTUAL DE APRENDIZAJE: READ, PLAY AND LEAR"
+          videoId="bbVOltiyX20"
+          opts={{
+            height: "500",
+            width: "100%",
+            playerVars: {
+              autoplay: 0,
+            },
+          }}
+        />
+      </div>
+      <div className="card card-body shadow mt-4">
+        <div className="row">
+          <div className="col">
+            <MultipleOptions
+              id="1"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+          <div className="col">
+            <MultipleOptions
+              id="2"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+          <div className="col">
+            <MultipleOptions
+              id="3"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+        </div>
+        <div className="d-flex justify-content-center mt-3 mb-2">
+          <button className="btn btn-success">Validate Answers</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const activities = [
   <Activitie1 key={0} />,
   <Activitie2 key={1} />,
   <Activitie3 key={2} />,
   <Activitie4 key={3} />,
+  <Activitie5 key={4} />,
 ];
 
 export default Activities;
