@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { FC, useState } from "react";
+import ReactAudioPlayer from "react-audio-player";
 import MultipleOptions from "../src/components/forms/MultipleOptions";
 import Layout from "../src/components/Layout";
 
@@ -436,6 +437,134 @@ const Activitie2: FC = () => {
   );
 };
 
-const activities = [<Activitie1 key={0} />, <Activitie2 key={0} />];
+const Activitie3: FC = () => {
+  const [showtext, setShowText] = useState(false);
+
+  return (
+    <div>
+      <div className="card shadow">
+        <div className="d-flex justify-content-center">
+          <div className="h2">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div className="row mt-3">
+        <div className="col-4 d-flex flex-column align-items-center">
+          {!showtext ? (
+            <Image
+              src={require("../src/assets/images/carolina.svg")}
+              alt="Sophie"
+            />
+          ) : (
+            <div className="mb-3">
+              <div className="card shadow card-body">
+                My working day starts very early. From Monday to Friday I get up
+                at half past three and I have a shower and a cup of coffee. I
+                usually leave the house at ten past four because the car always
+                arrives a few minutes early. I get to the studio at about five
+                oclock and start work. My programme Good Morning Britain starts
+                at seven oclock and finishes at nine oclock. Then I leave the
+                studio at a quarter past ten. After that, I go shopping and
+                visit some friends. I get home at three oclock. A woman helps me
+                with the housework and the ironing. I read a newspaper and do
+                some work. Then my husband gets home at half past five in the
+                evening and I cook dinner. We stay at home in the evening. We
+                dont go out because I go to bed very early. We usually watch
+                television and then I go to bed at half past eight, Im usually
+                asleep by nine oclock. I think my job is very interesting but I
+                dont like getting up very early.
+              </div>
+            </div>
+          )}
+          <ReactAudioPlayer
+            src={require("../src/assets/audio/activitie3.mp3")}
+            controls
+          />
+          <button className="btn mt-2" onClick={() => setShowText(!showtext)}>
+            {!showtext ? "Show" : "Hide"} text{" "}
+            <i className="fa-regular fa-circle-question"></i>
+          </button>
+          <button className="btn btn-success mt-2">Valid answers</button>
+        </div>
+        <div className="col-8">
+          <div className="card shadow">
+            <div className="card-body">
+              <div className="">
+                <MultipleOptions
+                  id="1"
+                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                  options={["option 1", "option 2"]}
+                  correctOption={0}
+                  handlerCorrectOption={(isCorrect, id) => {
+                    console.log(isCorrect, id);
+                  }}
+                />
+              </div>
+              <div className="mt-2">
+                <MultipleOptions
+                  id="2"
+                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                  options={["option 1", "option 2"]}
+                  correctOption={0}
+                  handlerCorrectOption={(isCorrect, id) => {
+                    console.log(isCorrect, id);
+                  }}
+                />
+              </div>
+              <div className="mt-2">
+                <MultipleOptions
+                  id="3"
+                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                  options={["option 1", "option 2"]}
+                  correctOption={0}
+                  handlerCorrectOption={(isCorrect, id) => {
+                    console.log(isCorrect, id);
+                  }}
+                />
+              </div>
+              <div className="mt-2">
+                <MultipleOptions
+                  id="4"
+                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                  options={["option 1", "option 2"]}
+                  correctOption={0}
+                  handlerCorrectOption={(isCorrect, id) => {
+                    console.log(isCorrect, id);
+                  }}
+                />
+              </div>
+              <div className="mt-2">
+                <MultipleOptions
+                  id="5"
+                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                  options={["option 1", "option 2"]}
+                  correctOption={0}
+                  handlerCorrectOption={(isCorrect, id) => {
+                    console.log(isCorrect, id);
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const activities = [
+  <Activitie1 key={0} />,
+  <Activitie2 key={1} />,
+  <Activitie3 key={2} />,
+];
 
 export default Activities;
