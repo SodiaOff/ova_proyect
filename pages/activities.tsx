@@ -488,7 +488,7 @@ const Activitie3: FC = () => {
         <div className="col-8">
           <div className="card shadow">
             <div className="card-body">
-              <div className="">
+              <div>
                 <MultipleOptions
                   id="1"
                   label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
@@ -561,10 +561,187 @@ const Activitie3: FC = () => {
   );
 };
 
+const Activitie4: FC = () => {
+  return (
+    <div>
+      <div className="card shadow">
+        <div className="d-flex lh-1 flex-column justify-content-center align-items-center">
+          <p className="h2">Lorem ipsum dolor sit amet.</p>
+          <p className="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
+            perferendis!
+          </p>
+        </div>
+      </div>
+      <div className="d-flex shadow mt-4">
+        <div>
+          <div className="card">
+            <Image
+              src={require("../src/assets/images/carolina.svg")}
+              alt="Sophie"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="card">
+            <Image
+              src={require("../src/assets/images/carolina.svg")}
+              alt="Sophie"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="card">
+            <Image
+              src={require("../src/assets/images/carolina.svg")}
+              alt="Sophie"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="card">
+            <Image
+              src={require("../src/assets/images/carolina.svg")}
+              alt="Sophie"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="card">
+            <Image
+              src={require("../src/assets/images/carolina.svg")}
+              alt="Sophie"
+              className="card-img-top"
+            />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="card shadow d-flex flex-column mt-4">
+        <h3 className="card-title align-self-center">
+          Lorem ipsum dolor sit amet.
+        </h3>
+        <div className="card-body">
+          <div className="row">
+            <div className="col">
+              <MultipleOptions
+                id="1"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+            <div className="col">
+              <MultipleOptions
+                id="2"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+          </div>
+          <div className="row mt-3">
+            <div className="col">
+              <MultipleOptions
+                id="3"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+            <div className="col">
+              <MultipleOptions
+                id="4"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+          </div>
+          <div className="row mt-3">
+            <div className="col">
+              <MultipleOptions
+                id="5"
+                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+                options={["option 1", "option 2", "option 3"]}
+                correctOption={0}
+                handlerCorrectOption={(isCorrect, id) => {
+                  console.log(isCorrect, id);
+                }}
+              />
+            </div>
+            <div className="col d-flex justify-content-center align-items-center">
+              <div>
+                <button className="btn btn-success">Validate answers</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const activities = [
   <Activitie1 key={0} />,
   <Activitie2 key={1} />,
   <Activitie3 key={2} />,
+  <Activitie4 key={3} />,
 ];
 
 export default Activities;
