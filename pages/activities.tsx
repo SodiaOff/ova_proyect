@@ -42,6 +42,12 @@ const Activities: NextPage = () => {
           onClick={(id) => setSelected(id)}
           isActive={selected === 4}
         />
+        <ItemStep
+          id={5}
+          label="6"
+          onClick={(id) => setSelected(id)}
+          isActive={selected === 5}
+        />
       </div>
       <div className="mt-4">{activities[selected] ?? <div>No hay</div>}</div>
     </Layout>
@@ -748,7 +754,7 @@ const Activitie5: FC = () => {
       </div>
       <div className="card card-body shadow mt-4">
         <YouTube
-          title="OBJETO VIRTUAL DE APRENDIZAJE: READ, PLAY AND LEAR"
+          title="Short Story to understand time - Daily routine - English"
           videoId="bbVOltiyX20"
           opts={{
             height: "500",
@@ -809,12 +815,114 @@ const Activitie5: FC = () => {
   );
 };
 
+const Activitie6: FC = () => {
+  return (
+    <div>
+      <div className="card shadow">
+        <div className="d-flex justify-content-center">
+          <div className="h2">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+      <div className="card card-body shadow mt-4">
+        <YouTube
+          title="Daniel Tiger’s Day & Night (Night)"
+          videoId="0bCZ71cOlik"
+          opts={{
+            height: "500",
+            width: "100%",
+            playerVars: {
+              autoplay: 0,
+            },
+          }}
+        />
+      </div>
+      <div className="card card-body shadow mt-4">
+        <div className="row">
+          <div className="col">
+            <MultipleOptions
+              id="1"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+          <div className="col">
+            <MultipleOptions
+              id="2"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+          <div className="col">
+            <MultipleOptions
+              id="3"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+        </div>
+        <div className="row mt-2">
+          <div className="col">
+            <MultipleOptions
+              id="1"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+          <div className="col">
+            <MultipleOptions
+              id="2"
+              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
+        eius praesentium accusamus possimus pariatur facere a veniam molestiae
+        eveniet!"
+              options={["option 1", "option 2", "option 3"]}
+              correctOption={0}
+              handlerCorrectOption={(isCorrect, id) => {
+                console.log(isCorrect, id);
+              }}
+            />
+          </div>
+          <div className="col d-flex justify-content-center align-items-center">
+            <div className="">
+              <button className="btn btn-success">Validate Answers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const activities = [
   <Activitie1 key={0} />,
   <Activitie2 key={1} />,
   <Activitie3 key={2} />,
   <Activitie4 key={3} />,
   <Activitie5 key={4} />,
+  <Activitie6 key={5} />,
 ];
 
 export default Activities;
