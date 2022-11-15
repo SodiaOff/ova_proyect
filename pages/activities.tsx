@@ -1,9 +1,11 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import { FC, useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import YouTube from "react-youtube";
 import MultipleOptions from "../src/components/forms/MultipleOptions";
+import SelectOptions from "../src/components/forms/SelectOptions";
 import Layout from "../src/components/Layout";
 
 const Activities: NextPage = () => {
@@ -11,6 +13,10 @@ const Activities: NextPage = () => {
 
   return (
     <Layout>
+      <Head>
+        <title>OVA English - activities</title>
+        <meta name="description" content="" />
+      </Head>
       <div className="d-flex justify-content-around mx-5">
         <ItemStep
           id={0}
@@ -144,7 +150,7 @@ const Activitie1: FC = () => {
           </div>
         </div>
       </div>
-      <div className="card shadow">
+      <div className="card shadow mt-3">
         <div className="d-flex justify-content-center">
           <div className="h3">Lorem ipsum dolor sit amet.</div>
         </div>
@@ -207,114 +213,68 @@ const Activitie1: FC = () => {
         <div className="col-5">
           <div className="card shadow">
             <div className="card-body">
-              <div className="row g-3 align-items-center">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
-              <div className="row g-3 align-items-center mt-1">
-                <div className="col-1">
-                  <label htmlFor="inputPassword6" className="col-form-label">
-                    A).
-                  </label>
-                </div>
-                <div className="col-11">
-                  <select id="inputPassword6" className="form-control w-100">
-                    <option value="a">1</option>
-                  </select>
-                </div>
-              </div>
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
+              <SelectOptions
+                label="A)."
+                options={["opcion 1", "opcion 2"]}
+                correctOption={0}
+                id="0"
+                customClass="mt-1"
+              />
             </div>
           </div>
         </div>
