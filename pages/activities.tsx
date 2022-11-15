@@ -429,11 +429,6 @@ const Activitie2: FC = () => {
                 correctOption={0}
               />
             </div>
-            <div className="col d-flex justify-content-center align-items-center">
-              <div>
-                <button className="btn btn-success">Validate answers</button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
