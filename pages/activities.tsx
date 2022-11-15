@@ -48,6 +48,18 @@ const Activities: NextPage = () => {
           onClick={(id) => setSelected(id)}
           isActive={selected === 5}
         />
+        <ItemStep
+          id={6}
+          label="7"
+          onClick={(id) => setSelected(id)}
+          isActive={selected === 6}
+        />
+        <ItemStep
+          id={7}
+          label="8"
+          onClick={(id) => setSelected(id)}
+          isActive={selected === 7}
+        />
       </div>
       <div className="mt-4">{activities[selected] ?? <div>No hay</div>}</div>
     </Layout>
@@ -371,9 +383,6 @@ const Activitie2: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
             <div className="col">
@@ -384,9 +393,6 @@ const Activitie2: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
           </div>
@@ -399,9 +405,6 @@ const Activitie2: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
             <div className="col">
@@ -412,9 +415,6 @@ const Activitie2: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
           </div>
@@ -427,9 +427,6 @@ const Activitie2: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
             <div className="col d-flex justify-content-center align-items-center">
@@ -503,9 +500,6 @@ const Activitie3: FC = () => {
         eveniet!"
                   options={["option 1", "option 2"]}
                   correctOption={0}
-                  handlerCorrectOption={(isCorrect, id) => {
-                    console.log(isCorrect, id);
-                  }}
                 />
               </div>
               <div className="mt-2">
@@ -516,9 +510,6 @@ const Activitie3: FC = () => {
         eveniet!"
                   options={["option 1", "option 2"]}
                   correctOption={0}
-                  handlerCorrectOption={(isCorrect, id) => {
-                    console.log(isCorrect, id);
-                  }}
                 />
               </div>
               <div className="mt-2">
@@ -529,9 +520,6 @@ const Activitie3: FC = () => {
         eveniet!"
                   options={["option 1", "option 2"]}
                   correctOption={0}
-                  handlerCorrectOption={(isCorrect, id) => {
-                    console.log(isCorrect, id);
-                  }}
                 />
               </div>
               <div className="mt-2">
@@ -542,9 +530,6 @@ const Activitie3: FC = () => {
         eveniet!"
                   options={["option 1", "option 2"]}
                   correctOption={0}
-                  handlerCorrectOption={(isCorrect, id) => {
-                    console.log(isCorrect, id);
-                  }}
                 />
               </div>
               <div className="mt-2">
@@ -555,9 +540,6 @@ const Activitie3: FC = () => {
         eveniet!"
                   options={["option 1", "option 2"]}
                   correctOption={0}
-                  handlerCorrectOption={(isCorrect, id) => {
-                    console.log(isCorrect, id);
-                  }}
                 />
               </div>
             </div>
@@ -671,9 +653,6 @@ const Activitie4: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
             <div className="col">
@@ -684,9 +663,6 @@ const Activitie4: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
           </div>
@@ -699,9 +675,6 @@ const Activitie4: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
             <div className="col">
@@ -712,9 +685,6 @@ const Activitie4: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
           </div>
@@ -727,9 +697,6 @@ const Activitie4: FC = () => {
         eveniet!"
                 options={["option 1", "option 2", "option 3"]}
                 correctOption={0}
-                handlerCorrectOption={(isCorrect, id) => {
-                  console.log(isCorrect, id);
-                }}
               />
             </div>
             <div className="col d-flex justify-content-center align-items-center">
@@ -775,9 +742,6 @@ const Activitie5: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
           <div className="col">
@@ -788,9 +752,6 @@ const Activitie5: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
           <div className="col">
@@ -801,9 +762,6 @@ const Activitie5: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
         </div>
@@ -846,9 +804,6 @@ const Activitie6: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
           <div className="col">
@@ -859,9 +814,6 @@ const Activitie6: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
           <div className="col">
@@ -872,9 +824,6 @@ const Activitie6: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
         </div>
@@ -887,9 +836,6 @@ const Activitie6: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
           <div className="col">
@@ -900,9 +846,6 @@ const Activitie6: FC = () => {
         eveniet!"
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
-              handlerCorrectOption={(isCorrect, id) => {
-                console.log(isCorrect, id);
-              }}
             />
           </div>
           <div className="col d-flex justify-content-center align-items-center">
