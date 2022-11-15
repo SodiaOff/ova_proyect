@@ -369,7 +369,7 @@ const Activitie2: FC = () => {
           <Image src={require("../src/assets/images/Emma.svg")} alt="Sophie" />
         </div>
       </div>
-      <div className="card shadow d-flex flex-column">
+      <div className="card mt-3 shadow d-flex flex-column">
         <h3 className="card-title align-self-center">
           Lorem ipsum dolor sit amet.
         </h3>
@@ -482,7 +482,6 @@ const Activitie3: FC = () => {
             {!showtext ? "Show" : "Hide"} text{" "}
             <i className="fa-regular fa-circle-question"></i>
           </button>
-          <button className="btn btn-success mt-2">Valid answers</button>
         </div>
         <div className="col-8">
           <div className="card shadow">
@@ -694,11 +693,6 @@ const Activitie4: FC = () => {
                 correctOption={0}
               />
             </div>
-            <div className="col d-flex justify-content-center align-items-center">
-              <div>
-                <button className="btn btn-success">Validate answers</button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -759,9 +753,6 @@ const Activitie5: FC = () => {
               correctOption={0}
             />
           </div>
-        </div>
-        <div className="d-flex justify-content-center mt-3 mb-2">
-          <button className="btn btn-success">Validate Answers</button>
         </div>
       </div>
     </div>
@@ -842,11 +833,6 @@ const Activitie6: FC = () => {
               options={["option 1", "option 2", "option 3"]}
               correctOption={0}
             />
-          </div>
-          <div className="col d-flex justify-content-center align-items-center">
-            <div className="">
-              <button className="btn btn-success">Validate Answers</button>
-            </div>
           </div>
         </div>
       </div>
