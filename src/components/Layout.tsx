@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import NProgress from "nprogress";
 import Link from "next/link";
 import { routes } from "../constants/routes";
+import Image from "next/image";
 
 interface IProps {
   children: ReactNode;
@@ -33,7 +34,13 @@ const Layout: FC<IProps> = ({ children }) => {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      <nav className="navbar navbar-dark bg-primary navbar-expand-md sticky-top">
+      <div className="container-fluid">
+        <Image src={require("../assets/images/Banner.svg")} alt="Banner OVA" />
+      </div>
+      <nav
+        className="navbar navbar-dark navbar-expand-md sticky-top"
+        style={{ background: "#091b84" }}
+      >
         <div className="container-fluid">
           <Link href={"/"}>
             <a className="navbar-brand" href="#">
