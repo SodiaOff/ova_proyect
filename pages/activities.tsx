@@ -8,6 +8,18 @@ import MultipleOptions from "../src/components/forms/MultipleOptions";
 import SelectOptions from "../src/components/forms/SelectOptions";
 import Layout from "../src/components/Layout";
 
+const options = [
+  "She has a shower",
+  "She catches the bus to school",
+  "She gets dressed",
+  "She gets up",
+  "She listens to music",
+  "She has lunch at the school canteen",
+  "She does her homework",
+  "She has dinner",
+  "She goes to bed at about ten o'clock",
+];
+
 const Activities: NextPage = () => {
   const [selected, setSelected] = useState(0);
 
@@ -104,7 +116,7 @@ const Activitie1: FC = () => {
     <div>
       <div className="card shadow">
         <div className="d-flex justify-content-center">
-          <div className="h2">Lorem ipsum dolor sit amet.</div>
+          <div className="h2">SOPHIES'S DAILY ROUTINE</div>
         </div>
       </div>
       <div className="row mt-3">
@@ -152,127 +164,116 @@ const Activitie1: FC = () => {
       </div>
       <div className="card shadow mt-3">
         <div className="d-flex justify-content-center">
-          <div className="h3">Lorem ipsum dolor sit amet.</div>
+          <div className="h3">Order Sophies's daily routine</div>
         </div>
       </div>
       <div className="row mt-4">
-        <div className="col-5">
+        <div className="col-6">
           <div className="card shadow">
             <div className="card-body">
               <div className="row g-3">
+                <label className="col-form-label">A). She has a shower</label>
+              </div>
+              <div className="row g-3 mt-1">
                 <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
+                  B). She catches the bus to school
+                </label>
+              </div>
+              <div className="row g-3 mt-1">
+                <label className="col-form-label">C). She gets dressed</label>
+              </div>
+              <div className="row g-3 mt-1">
+                <label className="col-form-label">D). She gets up</label>
+              </div>
+              <div className="row g-3 mt-1">
+                <label className="col-form-label">
+                  E). She does her homework
                 </label>
               </div>
               <div className="row g-3 mt-1">
                 <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
+                  F). She listens to music
                 </label>
               </div>
               <div className="row g-3 mt-1">
                 <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
+                  G). She has lunch at the school canteen
                 </label>
               </div>
               <div className="row g-3 mt-1">
                 <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
+                  H). She does her homework
                 </label>
               </div>
               <div className="row g-3 mt-1">
-                <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </label>
-              </div>
-              <div className="row g-3 mt-1">
-                <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </label>
-              </div>
-              <div className="row g-3 mt-1">
-                <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </label>
-              </div>
-              <div className="row g-3 mt-1">
-                <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </label>
-              </div>
-              <div className="row g-3 mt-1">
-                <label className="col-form-label">
-                  A). Lorem ipsum, dolor sit amet consectetur adipisicing.
-                </label>
+                <label className="col-form-label">I). She has dinner</label>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-auto">
-          <button className="btn btn-success">Validate answers</button>
-        </div>
-        <div className="col-5">
+        <div className="col-6">
           <div className="card shadow">
             <div className="card-body">
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="1)."
+                options={options}
+                correctOption={3}
+                id="1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
+                label="2)."
+                options={options}
                 correctOption={0}
-                id="0"
+                id="2"
                 customClass="mt-1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="3)."
+                options={options}
+                correctOption={2}
+                id="3"
                 customClass="mt-1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="4)."
+                options={options}
+                correctOption={1}
+                id="4"
                 customClass="mt-1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="5)."
+                options={options}
+                correctOption={5}
+                id="5"
                 customClass="mt-1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="6)."
+                options={options}
+                correctOption={6}
+                id="6"
                 customClass="mt-1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="7)."
+                options={options}
+                correctOption={4}
+                id="7"
                 customClass="mt-1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="8)."
+                options={options}
+                correctOption={7}
+                id="8"
                 customClass="mt-1"
               />
               <SelectOptions
-                label="A)."
-                options={["opcion 1", "opcion 2"]}
-                correctOption={0}
-                id="0"
+                label="9)."
+                options={options}
+                correctOption={8}
+                id="9"
                 customClass="mt-1"
               />
             </div>
@@ -288,7 +289,7 @@ const Activitie2: FC = () => {
     <div>
       <div className="card shadow">
         <div className="d-flex justify-content-center">
-          <div className="h2">Lorem ipsum dolor sit amet.</div>
+          <div className="h2">EMMA´S DAILY ROUTINE</div>
         </div>
       </div>
       <div className="row mt-3">
@@ -331,28 +332,32 @@ const Activitie2: FC = () => {
       </div>
       <div className="card mt-3 shadow d-flex flex-column">
         <h3 className="card-title align-self-center">
-          Lorem ipsum dolor sit amet.
+          Answer the question about Emmma
         </h3>
         <div className="card-body">
           <div className="row">
             <div className="col">
               <MultipleOptions
                 id="1"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
-                correctOption={0}
+                label="1) How old is Emma?"
+                options={[
+                  "She is seven years old",
+                  "She is ten years old",
+                  "She is five years old",
+                ]}
+                correctOption={1}
               />
             </div>
             <div className="col">
               <MultipleOptions
                 id="2"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
-                correctOption={0}
+                label="2) Where does she live"
+                options={[
+                  "She lives in street",
+                  "She lives whit dog in USA",
+                  "She lives whit her family in Brightan in the south of england",
+                ]}
+                correctOption={2}
               />
             </div>
           </div>
@@ -360,21 +365,25 @@ const Activitie2: FC = () => {
             <div className="col">
               <MultipleOptions
                 id="3"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
+                label="3) How many brothers and sisters has she got?"
+                options={[
+                  "She has got one Little brother",
+                  "She has two sister",
+                  "She has one brother and one sister",
+                ]}
                 correctOption={0}
               />
             </div>
             <div className="col">
               <MultipleOptions
                 id="4"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
-                correctOption={0}
+                label="4) What kind of clothes does she like?"
+                options={[
+                  "Jeans, skirt, t-shirt, trainers",
+                  "Jeans, t-shirt, Shorts and trainers",
+                  "Jeans, dress, t-shirt, sandal",
+                ]}
+                correctOption={1}
               />
             </div>
           </div>
@@ -382,11 +391,13 @@ const Activitie2: FC = () => {
             <div className="col">
               <MultipleOptions
                 id="5"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
-                correctOption={0}
+                label="5) What does she have for breakfast?"
+                options={[
+                  "She usually eats soup",
+                  "She usually eats bread whit coffee",
+                  "She usually has a bowl whit cornflakes with hot milk",
+                ]}
+                correctOption={2}
               />
             </div>
           </div>
@@ -403,7 +414,7 @@ const Activitie3: FC = () => {
     <div>
       <div className="card shadow">
         <div className="d-flex justify-content-center">
-          <div className="h2">Lorem ipsum dolor sit amet.</div>
+          <div className="h2">My Working Day</div>
         </div>
       </div>
       <div className="row mt-3">
@@ -449,51 +460,65 @@ const Activitie3: FC = () => {
               <div>
                 <MultipleOptions
                   id="1"
-                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                  options={["option 1", "option 2"]}
+                  label="1) The person is a woman"
+                  options={["True", "False"]}
                   correctOption={0}
                 />
               </div>
               <div className="mt-2">
                 <MultipleOptions
                   id="2"
-                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                  options={["option 1", "option 2"]}
+                  label="2) She is a television journalist"
+                  options={["True", "False"]}
                   correctOption={0}
                 />
               </div>
               <div className="mt-2">
                 <MultipleOptions
                   id="3"
-                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                  options={["option 1", "option 2"]}
-                  correctOption={0}
+                  label="3) She drives her car to work"
+                  options={["True", "False"]}
+                  correctOption={1}
                 />
               </div>
               <div className="mt-2">
                 <MultipleOptions
                   id="4"
-                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                  options={["option 1", "option 2"]}
-                  correctOption={0}
+                  label="4) She goes home after the programme finishes"
+                  options={["True", "False"]}
+                  correctOption={1}
                 />
               </div>
               <div className="mt-2">
                 <MultipleOptions
                   id="5"
-                  label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                  options={["option 1", "option 2"]}
+                  label="5) She is in the house alone till her husbnad arrives home"
+                  options={["True", "False"]}
                   correctOption={0}
+                />
+              </div>
+              <div className="mt-2">
+                <MultipleOptions
+                  id="6"
+                  label="6. She goes to bed early during the week."
+                  options={["True", "False"]}
+                  correctOption={1}
+                />
+              </div>
+              <div className="mt-2">
+                <MultipleOptions
+                  id="7"
+                  label="7. She works with her husband."
+                  options={["True", "False"]}
+                  correctOption={1}
+                />
+              </div>
+              <div className="mt-2">
+                <MultipleOptions
+                  id="8"
+                  label="8. She likes everything about her job."
+                  options={["True", "False"]}
+                  correctOption={1}
                 />
               </div>
             </div>
@@ -509,10 +534,10 @@ const Activitie4: FC = () => {
     <div>
       <div className="card shadow">
         <div className="d-flex lh-1 flex-column justify-content-center align-items-center">
-          <p className="h2">Lorem ipsum dolor sit amet.</p>
+          <p className="h2">Comics Life</p>
           <p className="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod,
-            perferendis!
+            Use the present simple tense to talk about daily routines and
+            different times of the day
           </p>
         </div>
       </div>
@@ -520,14 +545,16 @@ const Activitie4: FC = () => {
         <div>
           <div className="card">
             <Image
-              src={require("../src/assets/images/carolina.svg")}
+              src={require("../src/assets/images/Bus Escolar.svg")}
               alt="Sophie"
               className="card-img-top"
             />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
+                Christophe gets the bus into town on Saturday morning.
+                <br />
+                <br />
+                He meets his friends in town
               </p>
             </div>
           </div>
@@ -535,14 +562,16 @@ const Activitie4: FC = () => {
         <div>
           <div className="card">
             <Image
-              src={require("../src/assets/images/carolina.svg")}
+              src={require("../src/assets/images/Hamburguesa.svg")}
               alt="Sophie"
               className="card-img-top"
             />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
+                In the morning Christophe and his friends go shopping.
+                <br />
+                <br />
+                At noon, they have lunch together
               </p>
             </div>
           </div>
@@ -550,14 +579,16 @@ const Activitie4: FC = () => {
         <div>
           <div className="card">
             <Image
-              src={require("../src/assets/images/carolina.svg")}
+              src={require("../src/assets/images/Futbolista.svg")}
               alt="Sophie"
               className="card-img-top"
             />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
+                After lunch Christophe plays football.
+                <br />
+                <br />
+                At three o'clock, he does his homework in the library.
               </p>
             </div>
           </div>
@@ -565,14 +596,16 @@ const Activitie4: FC = () => {
         <div>
           <div className="card">
             <Image
-              src={require("../src/assets/images/carolina.svg")}
+              src={require("../src/assets/images/Dardos.svg")}
               alt="Sophie"
               className="card-img-top"
             />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
+                At a six o'clock, cooks dinner for his family.
+                <br />
+                At eight o o'clock, Christophe plays darts with his friends in
+                the pub.
               </p>
             </div>
           </div>
@@ -580,42 +613,40 @@ const Activitie4: FC = () => {
         <div>
           <div className="card">
             <Image
-              src={require("../src/assets/images/carolina.svg")}
+              src={require("../src/assets/images/Television.svg")}
               alt="Sophie"
               className="card-img-top"
             />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
+                At ten o'clock,Christophe goes home and watches television.
+                <br />
+                He goes to bed at midnight
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="card shadow d-flex flex-column mt-4">
-        <h3 className="card-title align-self-center">
-          Lorem ipsum dolor sit amet.
-        </h3>
         <div className="card-body">
           <div className="row">
             <div className="col">
               <MultipleOptions
                 id="1"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
+                label="1) Where does Christophe come from?"
+                options={["England", "Spain", "Spanish"]}
                 correctOption={0}
               />
             </div>
             <div className="col">
               <MultipleOptions
                 id="2"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
+                label="2) What time does Christophe go to bed?"
+                options={[
+                  "Twelve o'clock at night",
+                  "Eleven o'clock at night",
+                  "Ten o'clock at night",
+                ]}
                 correctOption={0}
               />
             </div>
@@ -624,20 +655,16 @@ const Activitie4: FC = () => {
             <div className="col">
               <MultipleOptions
                 id="3"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
+                label="3) When does Christophe play darts?"
+                options={["In the evening", "At noon", "In the afternoon"]}
                 correctOption={0}
               />
             </div>
             <div className="col">
               <MultipleOptions
                 id="4"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
+                label="4) When does Christophe go shopping?"
+                options={["At noon", "In the morning", "In the afternoon"]}
                 correctOption={0}
               />
             </div>
@@ -646,10 +673,8 @@ const Activitie4: FC = () => {
             <div className="col">
               <MultipleOptions
                 id="5"
-                label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-                options={["option 1", "option 2", "option 3"]}
+                label="5) What time does Christophe cook dinner on Saturdays?"
+                options={["At noon", "At six o'clock", "At three o'clock"]}
                 correctOption={0}
               />
             </div>
@@ -665,7 +690,9 @@ const Activitie5: FC = () => {
     <div>
       <div className="card shadow">
         <div className="d-flex justify-content-center">
-          <div className="h2">Lorem ipsum dolor sit amet.</div>
+          <div className="h4">
+            SHORT STORY TO UNDERSTAND TIME-DAILY ROUTINE-ENGLISH
+          </div>
         </div>
       </div>
       <div className="card card-body shadow mt-4">
@@ -680,38 +707,120 @@ const Activitie5: FC = () => {
             },
           }}
         />
-      </div>
-      <div className="card card-body shadow mt-4">
-        <div className="row">
-          <div className="col">
-            <MultipleOptions
-              id="1"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
-              correctOption={0}
-            />
-          </div>
-          <div className="col">
-            <MultipleOptions
-              id="2"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
-              correctOption={0}
-            />
-          </div>
-          <div className="col">
-            <MultipleOptions
-              id="3"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
-              correctOption={0}
-            />
+
+        <div className="container mt-3">
+          <div className="row">
+            <div className="col">
+              <div className="row">
+                <p className="mt-2">1) What time does she wake up? </p>
+                <div className="card">
+                  <Image
+                    src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                    alt="clock"
+                    className="card-img-top"
+                  />
+                  <div className="card-body">
+                    <MultipleOptions
+                      id="1"
+                      label=""
+                      options={["option 1"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="row" style={{ background: "red" }}>
+                <div className="card">
+                  <Image
+                    src={require("../src/assets/images/Reloj 2 7-00.svg")}
+                    alt="clock"
+                    className="card-img-top"
+                  />
+                  <div className="card-body">
+                    <MultipleOptions
+                      id="1"
+                      label=""
+                      options={["option 1"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="row">
+                <p className="mt-2">2) What time does he start classes? </p>
+                <div className="card">
+                  <Image
+                    src={require("../src/assets/images/Reloj 2 11-00.svg")}
+                    alt="clock"
+                    className="card-img-top"
+                  />
+                  <div className="card-body">
+                    <MultipleOptions
+                      id="1"
+                      label=""
+                      options={["option 1"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="card">
+                  <Image
+                    src={require("../src/assets/images/Reloj 2 8-00.svg")}
+                    alt="clock"
+                    className="card-img-top"
+                  />
+                  <div className="card-body">
+                    <MultipleOptions
+                      id="1"
+                      label=""
+                      options={["option 1"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="row">
+                <p className="mt-2">3) What time does she drawing class? </p>
+                <div className="card">
+                  <Image
+                    src={require("../src/assets/images/Reloj 2 9-00.svg")}
+                    alt="clock"
+                    className="card-img-top"
+                  />
+                  <div className="card-body">
+                    <MultipleOptions
+                      id="1"
+                      label=""
+                      options={[""]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="card">
+                  <Image
+                    src={require("../src/assets/images/Reloj 2 11-00.svg")}
+                    alt="clock"
+                    className="card-img-top"
+                  />
+                  <div className="card-body">
+                    <MultipleOptions
+                      id="1"
+                      label=""
+                      options={["option 1"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -724,7 +833,10 @@ const Activitie6: FC = () => {
     <div>
       <div className="card shadow">
         <div className="d-flex justify-content-center">
-          <div className="h2">Lorem ipsum dolor sit amet.</div>
+          <div className="h5">
+            DANIEL TIGER´S DAY AND NIGHT-LEARNING DAILY MORNING AND NIGHT
+            ROUTINES
+          </div>
         </div>
       </div>
       <div className="card card-body shadow mt-4">
@@ -745,30 +857,31 @@ const Activitie6: FC = () => {
           <div className="col">
             <MultipleOptions
               id="1"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
+              label="6) What is the correct order of the activities that Daniel do to get ready to school? Choose one option:"
+              options={[
+                "Put on his shoes-clothes on-brush his teeth have breakfast",
+                "Clothes on- have breakfast- brush his teeth- put on his shoes",
+              ]}
               correctOption={0}
             />
           </div>
           <div className="col">
             <MultipleOptions
               id="2"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
+              label="7) What does he eat for breakfast?"
+              options={[
+                "Pancakes whit strawberries",
+                "Cereal with milk",
+                "option 3",
+              ]}
               correctOption={0}
             />
           </div>
           <div className="col">
             <MultipleOptions
               id="3"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
+              label="8) What's the first activity does Daniel do at night?"
+              options={["Play video games", "Take a bath"]}
               correctOption={0}
             />
           </div>
@@ -777,20 +890,16 @@ const Activitie6: FC = () => {
           <div className="col">
             <MultipleOptions
               id="1"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
+              label="9) What's the second activity does Daniel do at night?"
+              options={["Brush his teeth", "Play outside with friends"]}
               correctOption={0}
             />
           </div>
           <div className="col">
             <MultipleOptions
               id="2"
-              label="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus
-        eius praesentium accusamus possimus pariatur facere a veniam molestiae
-        eveniet!"
-              options={["option 1", "option 2", "option 3"]}
+              label="10) What does Daniel's mother do to make him fall sleep?"
+              options={["Watch a movie", "Tell a story"]}
               correctOption={0}
             />
           </div>
