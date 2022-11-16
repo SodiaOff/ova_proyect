@@ -60,15 +60,15 @@ const SelectOptions: FC<Props> = ({
             {result === correctOption.toString() ? (
               <i className="fa-solid text-success fa-circle-check"></i>
             ) : (
-              <a
-                href="#"
+              <div
+                style={{ cursor: "pointer" }}
                 data-bs-toggle="tooltip"
                 data-bs-title={
                   "La opción corresta es: " + options[correctOption]
                 }
               >
                 <i className="fa-solid text-danger fa-circle-xmark"></i>
-              </a>
+              </div>
             )}
           </div>
         )}
