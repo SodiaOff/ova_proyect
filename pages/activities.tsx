@@ -1,7 +1,8 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { FC, useState } from "react";
+import { useRouter } from "next/router";
+import { FC, useEffect, useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import YouTube from "react-youtube";
 import MultipleOptions from "../src/components/forms/MultipleOptions";
@@ -21,7 +22,19 @@ const options = [
 ];
 
 const Activities: NextPage = () => {
+  const router = useRouter();
+
   const [selected, setSelected] = useState(0);
+
+  useEffect(() => {
+    try {
+      const currentActivitie = parseInt(router.asPath.split("#")[1]);
+
+      if (currentActivitie) {
+        setSelected(currentActivitie - 1);
+      }
+    } catch (error) {}
+  }, [router.asPath]);
 
   return (
     <Layout>
@@ -93,21 +106,22 @@ interface IItemStep {
 
 const ItemStep: FC<IItemStep> = ({ id, label, onClick, isActive }) => {
   return (
-    <div
-      key={id}
-      style={{
-        width: 80,
-        height: 80,
-        cursor: "pointer",
-      }}
-      className={
-        "border rounded-circle border-2 bg-primary d-flex justify-content-center align-items-center shadow " +
-        (isActive ? "border-dark border-5" : "border-white")
-      }
-      onClick={() => onClick(id)}
-    >
-      <div className="text-white h4">{label}</div>
-    </div>
+    <a href={"#" + (id + 1)} key={id}>
+      <div
+        style={{
+          width: 80,
+          height: 80,
+          cursor: "pointer",
+        }}
+        className={
+          "border rounded-circle border-2 bg-primary d-flex justify-content-center align-items-center shadow " +
+          (isActive ? "border-dark border-5" : "border-white")
+        }
+        onClick={() => onClick(id)}
+      >
+        <div className="text-white h4">{label}</div>
+      </div>
+    </a>
   );
 };
 
@@ -116,7 +130,7 @@ const Activitie1: FC = () => {
     <div>
       <div className="card shadow">
         <div className="d-flex justify-content-center">
-          <div className="h2">SOPHIES'S DAILY ROUTINE</div>
+          <div className="h2">SOPHIES{"'"}S DAILY ROUTINE</div>
         </div>
       </div>
       <div className="row mt-3">
@@ -164,7 +178,7 @@ const Activitie1: FC = () => {
       </div>
       <div className="card shadow mt-3">
         <div className="d-flex justify-content-center">
-          <div className="h3">Order Sophies's daily routine</div>
+          <div className="h3">Order Sophies{"'"}s daily routine</div>
         </div>
       </div>
       <div className="row mt-4">
@@ -588,7 +602,7 @@ const Activitie4: FC = () => {
                 After lunch Christophe plays football.
                 <br />
                 <br />
-                At three o'clock, he does his homework in the library.
+                At three o{"'"}clock, he does his homework in the library.
               </p>
             </div>
           </div>
@@ -602,10 +616,10 @@ const Activitie4: FC = () => {
             />
             <div className="card-body">
               <p className="card-text">
-                At a six o'clock, cooks dinner for his family.
+                At a six o{"'"}clock, cooks dinner for his family.
                 <br />
-                At eight o o'clock, Christophe plays darts with his friends in
-                the pub.
+                At eight o o{"'"}clock, Christophe plays darts with his friends
+                in the pub.
               </p>
             </div>
           </div>
@@ -619,7 +633,7 @@ const Activitie4: FC = () => {
             />
             <div className="card-body">
               <p className="card-text">
-                At ten o'clock,Christophe goes home and watches television.
+                At ten o{"'"}clock,Christophe goes home and watches television.
                 <br />
                 He goes to bed at midnight
               </p>
@@ -707,119 +721,82 @@ const Activitie5: FC = () => {
             },
           }}
         />
-
         <div className="container mt-3">
           <div className="row">
             <div className="col">
-              <div className="row">
-                <p className="mt-2">1) What time does she wake up? </p>
-                <div className="card">
+              <MultipleOptions
+                id="1"
+                label="1) What time does she wake up?"
+                options={[
                   <Image
+                    key={0}
                     src={require("../src/assets/images/Reloj 2 6-00.svg")}
                     alt="clock"
                     className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <MultipleOptions
-                      id="1"
-                      label=""
-                      options={["option 1"]}
-                      correctOption={0}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row" style={{ background: "red" }}>
-                <div className="card">
+                    width={"150%"}
+                    height={"150%"}
+                  />,
                   <Image
+                    key={1}
                     src={require("../src/assets/images/Reloj 2 7-00.svg")}
                     alt="clock"
                     className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <MultipleOptions
-                      id="1"
-                      label=""
-                      options={["option 1"]}
-                      correctOption={0}
-                    />
-                  </div>
-                </div>
-              </div>
+                    width={"150%"}
+                    height={"150%"}
+                  />,
+                ]}
+                correctOption={0}
+              />
             </div>
             <div className="col">
-              <div className="row">
-                <p className="mt-2">2) What time does he start classes? </p>
-                <div className="card">
+              <MultipleOptions
+                id="2"
+                label="2) What time does she wake up?"
+                options={[
                   <Image
+                    key={0}
                     src={require("../src/assets/images/Reloj 2 11-00.svg")}
                     alt="clock"
                     className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <MultipleOptions
-                      id="1"
-                      label=""
-                      options={["option 1"]}
-                      correctOption={0}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="card">
+                    width={"150%"}
+                    height={"150%"}
+                  />,
                   <Image
+                    key={1}
                     src={require("../src/assets/images/Reloj 2 8-00.svg")}
                     alt="clock"
                     className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <MultipleOptions
-                      id="1"
-                      label=""
-                      options={["option 1"]}
-                      correctOption={0}
-                    />
-                  </div>
-                </div>
-              </div>
+                    width={"150%"}
+                    height={"150%"}
+                  />,
+                ]}
+                correctOption={0}
+              />
             </div>
             <div className="col">
-              <div className="row">
-                <p className="mt-2">3) What time does she drawing class? </p>
-                <div className="card">
+              <MultipleOptions
+                id="3"
+                label="3) What time does she drawing class?"
+                options={[
                   <Image
+                    key={0}
                     src={require("../src/assets/images/Reloj 2 9-00.svg")}
                     alt="clock"
                     className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <MultipleOptions
-                      id="1"
-                      label=""
-                      options={[""]}
-                      correctOption={0}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="card">
+                    width={"150%"}
+                    height={"150%"}
+                  />,
                   <Image
+                    key={1}
                     src={require("../src/assets/images/Reloj 2 11-00.svg")}
                     alt="clock"
                     className="card-img-top"
-                  />
-                  <div className="card-body">
-                    <MultipleOptions
-                      id="1"
-                      label=""
-                      options={["option 1"]}
-                      correctOption={0}
-                    />
-                  </div>
-                </div>
-              </div>
+                    width={"150%"}
+                    height={"150%"}
+                  />,
+                ]}
+                correctOption={0}
+              />
             </div>
           </div>
         </div>

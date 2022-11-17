@@ -1,9 +1,9 @@
-import { FC, useState } from "react";
+import { FC, useState, ReactNode } from "react";
 
 interface Props {
   id: string;
   label: string;
-  options: string[];
+  options: (string | ReactNode)[];
   correctOption: number;
 }
 
@@ -29,7 +29,10 @@ const MultipleOptions: FC<Props> = ({ correctOption, label, options, id }) => {
             Respuesta correcta
           </div>
         ) : (
-          <div className="alert alert-danger py-1 mt-3 d-flex" role="alert">
+          <div
+            className="alert alert-danger py-1 mt-3 d-flex align-items-center"
+            role="alert"
+          >
             <div className="">Error, la respuesta correcta es:</div>
             <div className="fw-bold ms-1">
               {localOption[correctOption].value}

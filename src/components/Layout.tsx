@@ -34,13 +34,12 @@ const Layout: FC<IProps> = ({ children }) => {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      <div className="container-fluid">
-        <Image src={require("../assets/images/Banner.svg")} alt="Banner OVA" />
-      </div>
-      <nav
-        className="navbar navbar-dark navbar-expand-md sticky-top"
-        style={{ background: "#091b84" }}
-      >
+      <Image
+        src={require("../assets/images/Banner.svg")}
+        alt="Banner OVA"
+        priority
+      />
+      <nav className="navbar navbar-dark bg-primary navbar-expand-md sticky-top">
         <div className="container-fluid">
           <Link href={"/"}>
             <a className="navbar-brand" href="#">
