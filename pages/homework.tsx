@@ -45,7 +45,7 @@ const Homework: NextPage = () => {
         </ul>
         {hasResponse && (
           <div className="alert alert-success py-1 mt-3" role="alert">
-            Su respuesta ha sido guardada con exito
+            Your answer has been successfully saved.
           </div>
         )}
         <div className="row">

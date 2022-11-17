@@ -905,7 +905,7 @@ const Activitie6: FC = () => {
                 "Cereal with milk",
                 "option 3",
               ]}
-              correctOption={0}
+              correctOption={1}
             />
           </div>
           <div className="col">
@@ -913,7 +913,7 @@ const Activitie6: FC = () => {
               id="3"
               label="8) What's the first activity does Daniel do at night?"
               options={["Play video games", "Take a bath"]}
-              correctOption={0}
+              correctOption={1}
             />
           </div>
         </div>
@@ -931,7 +931,7 @@ const Activitie6: FC = () => {
               id="2"
               label="10) What does Daniel's mother do to make him fall sleep?"
               options={["Watch a movie", "Tell a story"]}
-              correctOption={0}
+              correctOption={1}
             />
           </div>
         </div>
