@@ -8,10 +8,12 @@ const Grammar: NextPage = () => (
       <title>OVA English - Grammar</title>
       <meta name="description" content="" />
     </Head>
-    <embed
-      src="https://www.englishld.com/blog"
-      style={{ width: "100%", height: 500 }}
-    />
+    <div className="d-flex">
+      <embed
+        src="https://www.englishld.com/blog"
+        style={{ width: "100%", height: "100vh" }}
+      />
+    </div>
   </Layout>
 );
 

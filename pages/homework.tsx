@@ -7,6 +7,8 @@ import Layout from "../src/components/Layout";
 const Homework: NextPage = () => {
   const [hasResponse, setHasResponse] = useState(false);
   const [value, setValue] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
 
   const showAlert = async () => {
     await MySwal.fire({
@@ -56,6 +58,9 @@ const Homework: NextPage = () => {
                 className="form-control"
                 id="email-floating"
                 placeholder="insert your email"
+                value={email}
+                onChange={({ target }) => setEmail(target.value)}
+                disabled={hasResponse}
               />
               <label htmlFor="email-floating">Email address</label>
             </div>
@@ -67,6 +72,9 @@ const Homework: NextPage = () => {
                 className="form-control"
                 id="name-floating"
                 placeholder="insert your name"
+                value={name}
+                onChange={({ target }) => setName(target.value)}
+                disabled={hasResponse}
               />
               <label htmlFor="name-floating">Complete name</label>
             </div>
@@ -83,7 +91,6 @@ const Homework: NextPage = () => {
           ></textarea>
           <label htmlFor="floatingTextarea">Your comment</label>
         </div>
-
         <div className="d-flex justify-content-end">
           <small className="">letters: {value.length}</small>
         </div>
@@ -91,7 +98,12 @@ const Homework: NextPage = () => {
           <button
             className="btn btn-primary"
             onClick={showAlert}
-            disabled={hasResponse || value.length <= 5}
+            disabled={
+              hasResponse ||
+              value.length <= 5 ||
+              value.length <= 5 ||
+              value.length <= 5
+            }
           >
             Public your answer
           </button>
