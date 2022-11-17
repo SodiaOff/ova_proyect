@@ -966,7 +966,7 @@ const Activitie7: FC = () => {
         </div>
       </div>
       <div className="card card-body shadow mt-4">
-        <div className="d-flex flex-column ">
+        <div className="d-flex flex-column">
           <div className="fw-semibold lh-sm">
             1) Select number (1 - 7) in the order they appear in the text:
           </div>
