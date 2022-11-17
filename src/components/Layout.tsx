@@ -38,6 +38,7 @@ const Layout: FC<IProps> = ({ children, complete }) => {
       <Image
         src={require("../assets/images/Banner.svg")}
         alt="Banner OVA"
+        objectFit="cover"
         priority
       />
       <nav className="navbar navbar-dark bg-primary navbar-expand-md sticky-top">
