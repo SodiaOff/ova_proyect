@@ -966,15 +966,23 @@ const Activitie7: FC = () => {
         </div>
       </div>
       <div className="card card-body shadow mt-4">
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column ">
           <div className="fw-semibold lh-sm">
             1) Select number (1 - 7) in the order they appear in the text:
           </div>
-          <div className="row mt-3">
+          <div className="row mt-3 d-flex align-items-center">
             <div className="col">
-              <div className="card">
+              <div
+                className="card"
+                style={{
+                  width: "160px",
+                  height: "248px",
+                  marginTop: 6,
+                  marginBottom: 5,
+                }}
+              >
                 <Image
-                  src={require("../src/assets/images/Dardos.svg")}
+                  src={require("../src/assets/images/elastiger.png")}
                   alt="Sophie"
                   className="card-img-top"
                 />
@@ -993,7 +1001,7 @@ const Activitie7: FC = () => {
             <div className="col">
               <div className="card">
                 <Image
-                  src={require("../src/assets/images/Dardos.svg")}
+                  src={require("../src/assets/images/Fuerza.png")}
                   alt="Sophie"
                   className="card-img-top"
                 />
@@ -1002,7 +1010,7 @@ const Activitie7: FC = () => {
                     options={Array(7)
                       .fill(0)
                       .map((_, i) => (i + 1).toString())}
-                    correctOption={0}
+                    correctOption={4}
                     id="9"
                     customClass="mt-1"
                   />
@@ -1012,7 +1020,7 @@ const Activitie7: FC = () => {
             <div className="col">
               <div className="card">
                 <Image
-                  src={require("../src/assets/images/Dardos.svg")}
+                  src={require("../src/assets/images/Precaucion.png")}
                   alt="Sophie"
                   className="card-img-top"
                 />
@@ -1021,7 +1029,7 @@ const Activitie7: FC = () => {
                     options={Array(7)
                       .fill(0)
                       .map((_, i) => (i + 1).toString())}
-                    correctOption={0}
+                    correctOption={5}
                     id="9"
                     customClass="mt-1"
                   />
@@ -1031,7 +1039,7 @@ const Activitie7: FC = () => {
             <div className="col">
               <div className="card">
                 <Image
-                  src={require("../src/assets/images/Dardos.svg")}
+                  src={require("../src/assets/images/Cerebro.png")}
                   alt="Sophie"
                   className="card-img-top"
                 />
@@ -1040,7 +1048,7 @@ const Activitie7: FC = () => {
                     options={Array(7)
                       .fill(0)
                       .map((_, i) => (i + 1).toString())}
-                    correctOption={0}
+                    correctOption={6}
                     id="9"
                     customClass="mt-1"
                   />
@@ -1050,7 +1058,7 @@ const Activitie7: FC = () => {
             <div className="col">
               <div className="card">
                 <Image
-                  src={require("../src/assets/images/Dardos.svg")}
+                  src={require("../src/assets/images/Dash.png")}
                   alt="Sophie"
                   className="card-img-top"
                 />
@@ -1059,7 +1067,34 @@ const Activitie7: FC = () => {
                     options={Array(7)
                       .fill(0)
                       .map((_, i) => (i + 1).toString())}
-                    correctOption={0}
+                    correctOption={2}
+                    id="9"
+                    customClass="mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div
+                className="card"
+                style={{
+                  width: "160px",
+                  height: "248px",
+                  marginTop: 6,
+                  marginBottom: 5,
+                }}
+              >
+                <Image
+                  src={require("../src/assets/images/Mrbleauto.jpg")}
+                  alt="Mr increible levanta auto"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <SelectOptions
+                    options={Array(7)
+                      .fill(0)
+                      .map((_, i) => (i + 1).toString())}
+                    correctOption={3}
                     id="9"
                     customClass="mt-1"
                   />
@@ -1069,7 +1104,7 @@ const Activitie7: FC = () => {
             <div className="col">
               <div className="card">
                 <Image
-                  src={require("../src/assets/images/Dardos.svg")}
+                  src={require("../src/assets/images/Jack Jack.png")}
                   alt="Sophie"
                   className="card-img-top"
                 />
@@ -1078,7 +1113,7 @@ const Activitie7: FC = () => {
                     options={Array(7)
                       .fill(0)
                       .map((_, i) => (i + 1).toString())}
-                    correctOption={0}
+                    correctOption={1}
                     id="9"
                     customClass="mt-1"
                   />
@@ -1097,18 +1132,24 @@ const Activitie7: FC = () => {
               <div className="my-3 mx-4">
                 <div className="row">
                   <div className="col">
-                    <InputOptions id="1" label="a) lorem ipsum" />
+                    <InputOptions
+                      id="1"
+                      label="a) Who is the youngest in the family?"
+                    />
                   </div>
                   <div className="col">
-                    <InputOptions id="1" label="b) lorem ipsum" />
+                    <InputOptions id="2" label="b) How old is dash?" />
                   </div>
                 </div>
                 <div className="row mt-2">
                   <div className="col">
-                    <InputOptions id="1" label="c) lorem ipsum" />
+                    <InputOptions id="3" label="c) Who is the oldest?" />
                   </div>
                   <div className="col">
-                    <InputOptions id="1" label="d) lorem ipsum" />
+                    <InputOptions
+                      id="4"
+                      label="d) Who is the most intelligent?"
+                    />
                   </div>
                 </div>
               </div>
@@ -1123,33 +1164,15 @@ const Activitie7: FC = () => {
                   <div className="col">
                     <MultipleOptions
                       id="1"
-                      label="a) The person is a woman"
+                      label="A) Jack Jack hasn't gotany special powers."
                       options={["True", "False"]}
-                      correctOption={0}
+                      correctOption={1}
                     />
                   </div>
                   <div className="col">
                     <MultipleOptions
-                      id="1"
-                      label="a) The person is a woman"
-                      options={["True", "False"]}
-                      correctOption={0}
-                    />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col">
-                    <MultipleOptions
-                      id="1"
-                      label="a) The person is a woman"
-                      options={["True", "False"]}
-                      correctOption={0}
-                    />
-                  </div>
-                  <div className="col">
-                    <MultipleOptions
-                      id="1"
-                      label="a) The person is a woman"
+                      id="2"
+                      label="B) Helen is two years younger than Bob."
                       options={["True", "False"]}
                       correctOption={0}
                     />
@@ -1158,8 +1181,26 @@ const Activitie7: FC = () => {
                 <div className="row">
                   <div className="col">
                     <MultipleOptions
-                      id="1"
-                      label="a) The person is a woman"
+                      id="3"
+                      label="C) Jack Jack is four years younger than Violet."
+                      options={["True", "False"]}
+                      correctOption={1}
+                    />
+                  </div>
+                  <div className="col">
+                    <MultipleOptions
+                      id="4"
+                      label="D) Violet is the fastest in the family."
+                      options={["True", "False"]}
+                      correctOption={1}
+                    />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col">
+                    <MultipleOptions
+                      id="5"
+                      label="E) The strongest in the family is Bob."
                       options={["True", "False"]}
                       correctOption={0}
                     />
