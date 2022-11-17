@@ -23,6 +23,10 @@ const routes = [
     label: "Credits",
     route: "/credits",
   },
+  {
+    label: "Chat",
+    route: "/chat",
+  },
 ];
 
 export { routes };
