@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { FC, useEffect, useState } from "react";
 import ReactAudioPlayer from "react-audio-player";
 import YouTube from "react-youtube";
+import InputOptions from "../src/components/forms/InputOptions";
 import MultipleOptions from "../src/components/forms/MultipleOptions";
 import SelectOptions from "../src/components/forms/SelectOptions";
 import Layout from "../src/components/Layout";
@@ -346,6 +347,59 @@ const Activitie2: FC = () => {
       </div>
       <div className="card mt-3 shadow d-flex flex-column">
         <h3 className="card-title align-self-center">
+          What happens at the given times
+        </h3>
+        <div className="card-body">
+          <div className="row">
+            <div className="col d-flex flex-column align-items-center">
+              <Image
+                key={0}
+                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                alt="clock"
+                className="card-img-top"
+                width={"150%"}
+                height={"150%"}
+              />
+              <textarea className="form-control" value={"Emma "}></textarea>
+            </div>
+            <div className="col d-flex flex-column align-items-center">
+              <Image
+                key={0}
+                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                alt="clock"
+                className="card-img-top"
+                width={"150%"}
+                height={"150%"}
+              />
+              <textarea className="form-control"></textarea>
+            </div>
+            <div className="col d-flex flex-column align-items-center">
+              <Image
+                key={0}
+                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                alt="clock"
+                className="card-img-top"
+                width={"150%"}
+                height={"150%"}
+              />
+              <textarea className="form-control"></textarea>
+            </div>
+            <div className="col d-flex flex-column align-items-center">
+              <Image
+                key={0}
+                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                alt="clock"
+                className="card-img-top"
+                width={"150%"}
+                height={"150%"}
+              />
+              <textarea className="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="card mt-3 shadow d-flex flex-column">
+        <h3 className="card-title align-self-center">
           Answer the question about Emmma
         </h3>
         <div className="card-body">
@@ -470,8 +524,8 @@ const Activitie3: FC = () => {
         </div>
         <div className="col-8">
           <div className="card shadow">
-            <div className="card-body">
-              <div>
+            <div className="card-body row">
+              <div className="col-6">
                 <MultipleOptions
                   id="1"
                   label="1) The person is a woman"
@@ -479,7 +533,7 @@ const Activitie3: FC = () => {
                   correctOption={0}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 col-6">
                 <MultipleOptions
                   id="2"
                   label="2) She is a television journalist"
@@ -487,7 +541,7 @@ const Activitie3: FC = () => {
                   correctOption={0}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 col-6">
                 <MultipleOptions
                   id="3"
                   label="3) She drives her car to work"
@@ -495,7 +549,7 @@ const Activitie3: FC = () => {
                   correctOption={1}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 col-6">
                 <MultipleOptions
                   id="4"
                   label="4) She goes home after the programme finishes"
@@ -503,7 +557,7 @@ const Activitie3: FC = () => {
                   correctOption={1}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 col-6">
                 <MultipleOptions
                   id="5"
                   label="5) She is in the house alone till her husbnad arrives home"
@@ -511,7 +565,7 @@ const Activitie3: FC = () => {
                   correctOption={0}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 col-6">
                 <MultipleOptions
                   id="6"
                   label="6. She goes to bed early during the week."
@@ -519,7 +573,7 @@ const Activitie3: FC = () => {
                   correctOption={1}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 col-6">
                 <MultipleOptions
                   id="7"
                   label="7. She works with her husband."
@@ -527,7 +581,7 @@ const Activitie3: FC = () => {
                   correctOption={1}
                 />
               </div>
-              <div className="mt-2">
+              <div className="mt-2 col-6">
                 <MultipleOptions
                   id="8"
                   label="8. She likes everything about her job."
@@ -886,6 +940,262 @@ const Activitie6: FC = () => {
   );
 };
 
+const Activitie7: FC = () => {
+  const downloandImage = async () => {
+    const resp = await fetch("../src/assets/images/sopa.png");
+    const blobobject = await resp.blob();
+
+    const blob = window.URL.createObjectURL(blobobject);
+    const anchor = document.createElement("a");
+    anchor.style.display = "none";
+    anchor.href = blob;
+    anchor.download = "letter_soup.png";
+    document.body.appendChild(anchor);
+    anchor.click();
+    window.URL.revokeObjectURL(blob);
+  };
+
+  return (
+    <div>
+      <div className="card shadow">
+        <div className="d-flex justify-content-center">
+          <div className="h5">
+            DANIEL TIGER´S DAY AND NIGHT-LEARNING DAILY MORNING AND NIGHT
+            ROUTINES
+          </div>
+        </div>
+      </div>
+      <div className="card card-body shadow mt-4">
+        <div className="d-flex flex-column">
+          <div className="fw-semibold lh-sm">
+            1) Select number (1 - 7) in the order they appear in the text:
+          </div>
+          <div className="row mt-3">
+            <div className="col">
+              <div className="card">
+                <Image
+                  src={require("../src/assets/images/Dardos.svg")}
+                  alt="Sophie"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <SelectOptions
+                    options={Array(7)
+                      .fill(0)
+                      .map((_, i) => (i + 1).toString())}
+                    correctOption={0}
+                    id="9"
+                    customClass="mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <Image
+                  src={require("../src/assets/images/Dardos.svg")}
+                  alt="Sophie"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <SelectOptions
+                    options={Array(7)
+                      .fill(0)
+                      .map((_, i) => (i + 1).toString())}
+                    correctOption={0}
+                    id="9"
+                    customClass="mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <Image
+                  src={require("../src/assets/images/Dardos.svg")}
+                  alt="Sophie"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <SelectOptions
+                    options={Array(7)
+                      .fill(0)
+                      .map((_, i) => (i + 1).toString())}
+                    correctOption={0}
+                    id="9"
+                    customClass="mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <Image
+                  src={require("../src/assets/images/Dardos.svg")}
+                  alt="Sophie"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <SelectOptions
+                    options={Array(7)
+                      .fill(0)
+                      .map((_, i) => (i + 1).toString())}
+                    correctOption={0}
+                    id="9"
+                    customClass="mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <Image
+                  src={require("../src/assets/images/Dardos.svg")}
+                  alt="Sophie"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <SelectOptions
+                    options={Array(7)
+                      .fill(0)
+                      .map((_, i) => (i + 1).toString())}
+                    correctOption={0}
+                    id="9"
+                    customClass="mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <Image
+                  src={require("../src/assets/images/Dardos.svg")}
+                  alt="Sophie"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <SelectOptions
+                    options={Array(7)
+                      .fill(0)
+                      .map((_, i) => (i + 1).toString())}
+                    correctOption={0}
+                    id="9"
+                    customClass="mt-1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className="row">
+          <div className="col-5">
+            <div className="d-flex flex-column">
+              <div className="fw-semibold lh-sm">
+                2) Answer the questions about the text:
+              </div>
+              <div className="my-3 mx-4">
+                <div className="row">
+                  <div className="col">
+                    <InputOptions id="1" label="a) lorem ipsum" />
+                  </div>
+                  <div className="col">
+                    <InputOptions id="1" label="b) lorem ipsum" />
+                  </div>
+                </div>
+                <div className="row mt-2">
+                  <div className="col">
+                    <InputOptions id="1" label="c) lorem ipsum" />
+                  </div>
+                  <div className="col">
+                    <InputOptions id="1" label="d) lorem ipsum" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div className="d-flex flex-column">
+              <div className="fw-semibold lh-sm">
+                3) Write True (T) or False (F):
+              </div>
+              <div className="my-3 mx-4">
+                <div className="row">
+                  <div className="col">
+                    <MultipleOptions
+                      id="1"
+                      label="a) The person is a woman"
+                      options={["True", "False"]}
+                      correctOption={0}
+                    />
+                  </div>
+                  <div className="col">
+                    <MultipleOptions
+                      id="1"
+                      label="a) The person is a woman"
+                      options={["True", "False"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col">
+                    <MultipleOptions
+                      id="1"
+                      label="a) The person is a woman"
+                      options={["True", "False"]}
+                      correctOption={0}
+                    />
+                  </div>
+                  <div className="col">
+                    <MultipleOptions
+                      id="1"
+                      label="a) The person is a woman"
+                      options={["True", "False"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col">
+                    <MultipleOptions
+                      id="1"
+                      label="a) The person is a woman"
+                      options={["True", "False"]}
+                      correctOption={0}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-7">
+            <div className="d-flex flex-column">
+              <div className="fw-semibold lh-sm">
+                4) Find the superlatives of good, bad, big, silly, weak and
+                young:
+              </div>
+              <Image
+                key={0}
+                src={require("../src/assets/images/sopa.png")}
+                alt="clock"
+                objectFit="contain"
+                className="mt-2"
+              />
+              <div className="d-flex justify-content-center mt-3">
+                <button className="btn btn-primary" onClick={downloandImage}>
+                  Download letter soup
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+    </div>
+  );
+};
+
 const activities = [
   <Activitie1 key={0} />,
   <Activitie2 key={1} />,
@@ -893,6 +1203,7 @@ const activities = [
   <Activitie4 key={3} />,
   <Activitie5 key={4} />,
   <Activitie6 key={5} />,
+  <Activitie7 key={6} />,
 ];
 
 export default Activities;
