@@ -7,9 +7,10 @@ import Image from "next/image";
 
 interface IProps {
   children: ReactNode;
+  complete?: boolean;
 }
 
-const Layout: FC<IProps> = ({ children }) => {
+const Layout: FC<IProps> = ({ children, complete }) => {
   const router = useRouter();
 
   const currentRoutes = useMemo(
@@ -76,7 +77,7 @@ const Layout: FC<IProps> = ({ children }) => {
           </div>
         </div>
       </nav>
-      <div className="my-3 container">{children}</div>
+      {complete ? children : <div className="my-3 container">{children}</div>}
       <footer className="mt-auto bg-primary text-center text-lg-start text-white">
         <div className="text-center p-1">©2022 Dev Team SODIA OFF</div>
       </footer>

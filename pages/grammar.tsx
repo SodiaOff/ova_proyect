@@ -3,14 +3,15 @@ import Head from "next/head";
 import Layout from "../src/components/Layout";
 
 const Grammar: NextPage = () => (
-  <Layout>
+  <Layout complete>
     <Head>
       <title>OVA English - Grammar</title>
       <meta name="description" content="" />
     </Head>
-    <div className="d-flex flex-column align-items-center justify-content-center">
-      HOLA
-    </div>
+    <embed
+      src="https://www.englishld.com/blog"
+      style={{ width: "100%", height: 500 }}
+    />
   </Layout>
 );
 
