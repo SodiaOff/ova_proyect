@@ -18,7 +18,7 @@ const MultipleOptions: FC<Props> = ({ correctOption, label, options, id }) => {
   const [hasAnswer, setHasAnswer] = useState(false);
 
   return (
-    <div className="">
+    <div>
       <div className="d-flex align-items-center">
         <div className="fw-semibold lh-sm">{label}</div>
       </div>
@@ -33,7 +33,7 @@ const MultipleOptions: FC<Props> = ({ correctOption, label, options, id }) => {
             className="alert alert-danger py-1 mt-3 d-flex align-items-center"
             role="alert"
           >
-            <div className="">Error, la respuesta correcta es:</div>
+            <div>Error, la respuesta correcta es:</div>
             <div className="fw-bold ms-1">
               {localOption[correctOption].value}
             </div>

@@ -18,8 +18,8 @@ const Objetive: NextPage = () => {
               To promote the processes of reading and literal comprehension of
               short texts in English in the students of grade 9-1 of the
               educational institution Jorge Isaacs de el placer, making use of
-              the virtual learning object "Read, Play and Learn" as a tool that
-              intensifies the pedagogical and training processes.
+              the virtual learning object {'"'}Read, Play and Learn{'"'} as a
+              tool that intensifies the pedagogical and training processes.
             </p>
           </div>
           <div className="carta">

@@ -603,7 +603,7 @@ const Activitie4: FC = () => {
       <div className="card shadow">
         <div className="d-flex lh-1 flex-column justify-content-center align-items-center">
           <p className="h2">Comics Life</p>
-          <p className="">
+          <p>
             Use the present simple tense to talk about daily routines and
             different times of the day
           </p>

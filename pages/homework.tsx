@@ -92,7 +92,7 @@ const Homework: NextPage = () => {
           <label htmlFor="floatingTextarea">Your comment</label>
         </div>
         <div className="d-flex justify-content-end">
-          <small className="">letters: {value.length}</small>
+          <small>letters: {value.length}</small>
         </div>
         <div className="d-flex justify-content-center mt-3">
           <button
