@@ -354,7 +354,7 @@ const Activitie2: FC = () => {
             <div className="col d-flex flex-column align-items-center">
               <Image
                 key={0}
-                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                src={require("../src/assets/images/Reloj 8-30.svg")}
                 alt="clock"
                 className="card-img-top"
                 width={"150%"}
@@ -365,7 +365,7 @@ const Activitie2: FC = () => {
             <div className="col d-flex flex-column align-items-center">
               <Image
                 key={0}
-                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                src={require("../src/assets/images/Reloj 9-00.svg")}
                 alt="clock"
                 className="card-img-top"
                 width={"150%"}
@@ -376,7 +376,7 @@ const Activitie2: FC = () => {
             <div className="col d-flex flex-column align-items-center">
               <Image
                 key={0}
-                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                src={require("../src/assets/images/Reloj 11-00.svg")}
                 alt="clock"
                 className="card-img-top"
                 width={"150%"}
@@ -387,7 +387,7 @@ const Activitie2: FC = () => {
             <div className="col d-flex flex-column align-items-center">
               <Image
                 key={0}
-                src={require("../src/assets/images/Reloj 2 6-00.svg")}
+                src={require("../src/assets/images/Reloj 4-30.svg")}
                 alt="clock"
                 className="card-img-top"
                 width={"150%"}
@@ -733,7 +733,7 @@ const Activitie4: FC = () => {
                 id="4"
                 label="4) When does Christophe go shopping?"
                 options={["At noon", "In the morning", "In the afternoon"]}
-                correctOption={0}
+                correctOption={1}
               />
             </div>
           </div>
@@ -743,7 +743,7 @@ const Activitie4: FC = () => {
                 id="5"
                 label="5) What time does Christophe cook dinner on Saturdays?"
                 options={["At noon", "At six o'clock", "At three o'clock"]}
-                correctOption={0}
+                correctOption={1}
               />
             </div>
           </div>
@@ -824,7 +824,7 @@ const Activitie5: FC = () => {
                     height={"150%"}
                   />,
                 ]}
-                correctOption={0}
+                correctOption={1}
               />
             </div>
             <div className="col">
@@ -849,7 +849,7 @@ const Activitie5: FC = () => {
                     height={"150%"}
                   />,
                 ]}
-                correctOption={0}
+                correctOption={1}
               />
             </div>
           </div>
