@@ -2,9 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    disableStaticImages: true,
-  },
   webpack(config, options) {
     const { isServer } = options;
 
@@ -26,10 +23,6 @@ const nextConfig = {
       ],
     });
 
-    config.module.rules.push({
-      test: /\.svg$/i,
-      use: ["@svgr/webpack"],
-    });
     return config;
   },
 };
