@@ -23,6 +23,7 @@
     "sweetalert2-react-content": "^5.0.7"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "@types/eslint": "8.4.7",
     "@types/file-loader": "^5.0.1",
     "@types/node": "18.11.3",

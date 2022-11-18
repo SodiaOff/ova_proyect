@@ -4,6 +4,7 @@ const nextConfig = {
   swcMinify: true,
   webpack(config, options) {
     const { isServer } = options;
+
     config.module.rules.push({
       test: /\.(ogg|mp3|wav|mpe?g)$/i,
       exclude: config.exclude,
@@ -22,6 +23,11 @@ const nextConfig = {
       ],
     });
 
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ["@svgr/webpack"],
+    });
     return config;
   },
 };
