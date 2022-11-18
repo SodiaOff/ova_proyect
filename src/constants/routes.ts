@@ -20,6 +20,10 @@ const routes = [
     route: "/evaluation",
   },
   {
+    label: "ICFES",
+    route: "/icfes",
+  },
+  {
     label: "Credits",
     route: "/credits",
   },
