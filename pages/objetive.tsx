@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import MultipleOptions from "../src/components/forms/MultipleOptions";
 import Layout from "../src/components/Layout";
 
 const Objetive: NextPage = () => {
