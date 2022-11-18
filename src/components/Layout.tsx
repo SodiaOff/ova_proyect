@@ -79,6 +79,12 @@ const Layout: FC<IProps> = ({ children, complete }) => {
         </div>
       </nav>
       {complete ? children : <div className="my-3 container">{children}</div>}
+      <Image
+        src={require("../assets/images/Pie de Página.svg")}
+        alt="Niños pie de pagina OVA"
+        objectFit="cover"
+        priority
+      />
       <footer className="mt-auto bg-primary text-center text-lg-start text-white">
         <div className="text-center p-1">©2022 Dev Team SODIA OFF</div>
       </footer>
