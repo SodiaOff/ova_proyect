@@ -934,6 +934,7 @@ const Activitie6: FC = () => {
               correctOption={1}
             />
           </div>
+          <div className="col"></div>
         </div>
       </div>
     </div>
@@ -970,17 +971,9 @@ const Activitie7: FC = () => {
           <div className="fw-semibold lh-sm">
             1) Select number (1 - 7) in the order they appear in the text:
           </div>
-          <div className="row mt-3 d-flex align-items-center">
+          <div className="row mt-3">
             <div className="col">
-              <div
-                className="card"
-                style={{
-                  width: "160px",
-                  height: "248px",
-                  marginTop: 6,
-                  marginBottom: 5,
-                }}
-              >
+              <div className="card h-100">
                 <Image
                   src={require("../src/assets/images/elastiger.png")}
                   alt="Sophie"
@@ -999,7 +992,7 @@ const Activitie7: FC = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card">
+              <div className="card h-100">
                 <Image
                   src={require("../src/assets/images/Fuerza.png")}
                   alt="Sophie"
@@ -1018,7 +1011,7 @@ const Activitie7: FC = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card">
+              <div className="card h-100">
                 <Image
                   src={require("../src/assets/images/Precaucion.png")}
                   alt="Sophie"
@@ -1037,7 +1030,7 @@ const Activitie7: FC = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card">
+              <div className="card h-100">
                 <Image
                   src={require("../src/assets/images/Cerebro.png")}
                   alt="Sophie"
@@ -1056,7 +1049,7 @@ const Activitie7: FC = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card">
+              <div className="card h-100">
                 <Image
                   src={require("../src/assets/images/Dash.png")}
                   alt="Sophie"
@@ -1075,15 +1068,7 @@ const Activitie7: FC = () => {
               </div>
             </div>
             <div className="col">
-              <div
-                className="card"
-                style={{
-                  width: "160px",
-                  height: "248px",
-                  marginTop: 6,
-                  marginBottom: 5,
-                }}
-              >
+              <div className="card h-100">
                 <Image
                   src={require("../src/assets/images/Mrbleauto.jpg")}
                   alt="Mr increible levanta auto"
@@ -1102,7 +1087,7 @@ const Activitie7: FC = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card">
+              <div className="card h-100">
                 <Image
                   src={require("../src/assets/images/Jack Jack.png")}
                   alt="Sophie"
