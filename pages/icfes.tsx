@@ -11,7 +11,7 @@ const Icfes: NextPage = () => (
     <div className="d-flex flex-column">
       <div className="card card-body shadow mb-3">CUADERNILLO ICFES</div>
       <iframe
-        src={process.env.NEXT_PUBLIC_DOMAIN + "/Guia_PC-Ingles-9-2.pdf"}
+        src={"https://sodiaoff.github.io/ova_proyect/Guia_PC-Ingles-9-2.pdf"}
         style={{ width: "100%", height: "100vh" }}
       />
     </div>
