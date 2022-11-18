@@ -7,7 +7,7 @@ const nextConfig = {
     const { isServer } = options;
 
     config.module.rules.push({
-      test: /\.(ogg|mp3|wav|mpe?g)$/i,
+      test: /\.(svg|ogg|mp3|wav|mpe?g)$/i,
       exclude: config.exclude,
       use: [
         {
