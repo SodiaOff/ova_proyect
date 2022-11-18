@@ -489,7 +489,7 @@ const Activitie3: FC = () => {
         <div className="col-4 d-flex flex-column align-items-center">
           {!showtext ? (
             <Image
-              src={require("../src/assets/images/carolina.svg")}
+              src={require("../src/assets/images/Carolina.svg")}
               alt="Sophie"
             />
           ) : (

@@ -2,11 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    loader: "imgix",
+    path: "https://SodiaOff.github.io/",
+  },
   webpack(config, options) {
     const { isServer } = options;
-
     config.module.rules.push({
-      test: /\.(svg|ogg|mp3|wav|mpe?g)$/i,
+      test: /\.(ogg|mp3|wav|mpe?g)$/i,
       exclude: config.exclude,
       use: [
         {
