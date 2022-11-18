@@ -1215,8 +1215,145 @@ const Activitie7: FC = () => {
             </div>
           </div>
         </div>
-
         <hr />
+      </div>
+    </div>
+  );
+};
+
+const Activitie8: FC = () => {
+  return (
+    <div>
+      <div className="card shadow">
+        <div className="d-flex justify-content-center">
+          <div className="h5">Future plans</div>
+        </div>
+      </div>
+      <div className="mt-4 mx-5">
+        <div className="row">
+          <div className="col d-flex justify-content-center">
+            <Image
+              src={require("../src/assets/images/Lance.svg")}
+              alt="Lance"
+              width={"300%"}
+              height={"300%"}
+            />
+          </div>
+          <div className="col">
+            <div className="card card-body shadow">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+              eveniet, ea dolores sapiente molestias, aliquam nobis possimus
+              fugiat iusto doloremque commodi voluptatum animi, asperiores iste
+              sit nemo facere explicabo voluptas eaque veritatis! Cumque
+              consequatur nobis dicta velit? Iure consectetur eligendi enim
+              harum ipsam animi omnis numquam aliquam necessitatibus commodi quo
+              recusandae pariatur distinctio nemo, explicabo, asperiores
+              voluptatum corporis mollitia? Autem, iusto id fugit tenetur alias
+              fugiat quis assumenda amet, neque, minima culpa soluta rem
+              temporibus aliquid sit deserunt ex quaerat facilis blanditiis
+              aperiam odio expedita enim. Animi impedit fuga eveniet magnam
+              sequi, aliquam accusamus aliquid voluptate unde velit distinctio
+              ab.
+            </div>
+          </div>
+        </div>
+        <hr className="my-4" />
+        <div className="row my-3">
+          <div className="col">
+            <div className="card card-body shadow">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+              eveniet, ea dolores sapiente molestias, aliquam nobis possimus
+              fugiat iusto doloremque commodi voluptatum animi, asperiores iste
+              sit nemo facere explicabo voluptas eaque veritatis! Cumque
+              consequatur nobis dicta velit? Iure consectetur eligendi enim
+              harum ipsam animi omnis numquam aliquam necessitatibus commodi quo
+              recusandae pariatur distinctio nemo, explicabo, asperiores
+              voluptatum corporis mollitia? Autem, iusto id fugit tenetur alias
+              fugiat quis assumenda amet, neque, minima culpa soluta rem
+              temporibus aliquid sit deserunt ex quaerat facilis blanditiis
+              aperiam odio expedita enim. Animi impedit fuga eveniet magnam
+              sequi, aliquam accusamus aliquid voluptate unde velit distinctio
+              ab.
+            </div>
+          </div>
+          <div className="col d-flex justify-content-center">
+            <Image
+              src={require("../src/assets/images/Rosie.svg")}
+              alt="Lance"
+              width={"300%"}
+              height={"300%"}
+            />
+          </div>
+        </div>
+        <hr className="my-4" />
+        <div className="row">
+          <div className="col d-flex justify-content-center">
+            <Image
+              src={require("../src/assets/images/Laurent.svg")}
+              alt="Lance"
+              width={"300%"}
+              height={"300%"}
+            />
+          </div>
+          <div className="col">
+            <div className="card card-body shadow">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+              eveniet, ea dolores sapiente molestias, aliquam nobis possimus
+              fugiat iusto doloremque commodi voluptatum animi, asperiores iste
+              sit nemo facere explicabo voluptas eaque veritatis! Cumque
+              consequatur nobis dicta velit? Iure consectetur eligendi enim
+              harum ipsam animi omnis numquam aliquam necessitatibus commodi quo
+              recusandae pariatur distinctio nemo, explicabo, asperiores
+              voluptatum corporis mollitia? Autem, iusto id fugit tenetur alias
+              fugiat quis assumenda amet, neque, minima culpa soluta rem
+              temporibus aliquid sit deserunt ex quaerat facilis blanditiis
+              aperiam odio expedita enim. Animi impedit fuga eveniet magnam
+              sequi, aliquam accusamus aliquid voluptate unde velit distinctio
+              ab.
+            </div>
+          </div>
+        </div>
+        <hr className="my-4" />
+      </div>
+      <div className="mt-4 mx-5">
+        <div className="row">
+          <div className="col">
+            <InputOptions id="0" label="Who is going to be a doctor?" />
+          </div>
+          <div className="col">
+            <InputOptions
+              id="1"
+              label="Which 2 students will learn  new languages in the future?"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="mt-4 mx-5">
+        <div className="row">
+          <div className="col">
+            <InputOptions
+              id="2"
+              label="Will Laurent be able to learn Russian at school?"
+            />
+          </div>
+          <div className="col">
+            <InputOptions
+              id="3"
+              label="Does Lance think he will become a dancer when he is older?"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="mt-4 mx-5">
+        <div className="row">
+          <div className="col">
+            <InputOptions
+              id="4"
+              label="How many students want to travel in the future?"
+            />
+          </div>
+          <div className="col"></div>
+        </div>
       </div>
     </div>
   );
@@ -1230,6 +1367,7 @@ const activities = [
   <Activitie5 key={4} />,
   <Activitie6 key={5} />,
   <Activitie7 key={6} />,
+  <Activitie8 key={7} />,
 ];
 
 export default Activities;
