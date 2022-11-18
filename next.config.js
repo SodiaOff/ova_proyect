@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  exclude: path.resolve(__dirname, "src/assets/images"),
   webpack(config, options) {
     const { isServer } = options;
 
