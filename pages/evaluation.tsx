@@ -35,29 +35,29 @@ const Evaluation: NextPage = () => {
         </div>
         <InputOptions
           id="0"
-          label="¿qué te ha parecido el ova?"
+          label="What do you think of the OVA?"
           isTextarea
           customClass="mt-3"
         />
         <InputOptions
           id="1"
-          label="¿qué has aprendido durante el desarrollo del ova?"
+          label="What have you learned during the development of OVA?"
           customClass="mt-3"
         />
         <InputOptions
           id="2"
-          label="¿has mejorado tu habilidad de comprensión lectora literal con el desarrollo de la ova?"
+          label="Have you improved your literal reading comprehension skills with the development of OVA?"
           customClass="mt-3"
         />
         <InputOptions
           id="3"
-          label="¿las imágenes, los audios, los videos, los textos, e historietas incluidas en el ova han creado una atmosfera que refuerza el mensaje de cada lectura? Explica"
+          label="Have the images, audios, videos, texts, and comics included in the OVA created an atmosphere that reinforces the message of each reading? Explains"
           customClass="mt-3"
           isTextarea
         />
         <InputOptions
           id="4"
-          label="¿cuáles son tus fortalezas y dificultades durante el proceso?"
+          label="What are your strengths and difficulties during the process?"
           customClass="mt-3"
         />
         <div className="d-flex justify-content-center mt-3">
