@@ -161,8 +161,8 @@ const Activitie1: FC = () => {
                 Then she grabs her school bag and goes to the bus stop to catch
                 the school bus. Classes start at half past eight and finish at
                 half past four. She usually has lunch at the school canteen whit
-                her schoolmates at about 12 o'clock. Her best friend is Amy and
-                Sophie always sits next to her at lunch.
+                her schoolmates at about 12 o{"'"}clock. Her best friend is Amy
+                and Sophie always sits next to her at lunch.
               </p>
               <p>
                 After school she returns home and does her homework. She is a
@@ -174,15 +174,15 @@ const Activitie1: FC = () => {
                 a book or chatswhit her parents for a while.
               </p>
               <p>
-                Finally, she goes to bed at about ten o'clock, but before that
-                she brushes her teeth. Sophie is a happy little girl!
+                Finally, she goes to bed at about ten o{"'"}clock, but before
+                that she brushes her teeth. Sophie is a happy little girl!
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="h3 titulitos d-flex justify-content-center">
-        ORDER SOPHIE'S DAILY ROUTINE
+        ORDER SOPHIE{"'"}S DAILY ROUTINE
       </div>
       <div className="card shadow mt-3">
         <div className="d-flex justify-content-center"></div>
@@ -318,8 +318,8 @@ const Activitie2: FC = () => {
           <div className="card shadow">
             <div className="card-body">
               <p>
-                Hi, my name is Emma I'm ten years old and I'm English, I Live
-                whit family in Bringhton in the south of England.
+                Hi, my name is Emma I{"'"}m ten years old and I{"'"}m English, I
+                Live whit family in Bringhton in the south of England.
               </p>
               <p>
                 My day <a className="underline">usually</a> starts quite early,
@@ -339,12 +339,13 @@ const Activitie2: FC = () => {
                 school, I have to walk our dog, Leo.
               </p>
               <p>
-                I usually walk to school beacuse I don't live my far, Classes
-                start at 8:30, I like Maths best but I'm also good at science
-                and English, I have two breaks, at 11 and at 1 o'clock, I eat
-                sandwich and drink orange juice, I also play whit my classmates
-                in the playground, School finishes at 3:30 and my dad picks me
-                up and we come back home by car. Then we have lunch together.
+                I usually walk to school beacuse I don{"'"}t live my far,
+                Classes start at 8:30, I like Maths best but I{"'"}m also good
+                at science and English, I have two breaks, at 11 and at 1 o{"'"}
+                clock, I eat sandwich and drink orange juice, I also play whit
+                my classmates in the playground, School finishes at 3:30 and my
+                dad picks me up and we come back home by car. Then we have lunch
+                together.
               </p>
               <p>
                 After lunch I play whit my brother for a while and then I domy
@@ -683,7 +684,7 @@ const Activitie4: FC = () => {
               <p className="card-text">
                 After lunch Christophe plays football.
               </p>
-              <p>At three o'clock, he does his homework in the library.</p>
+              <p>At three o{"'"}clock, he does his homework in the library.</p>
             </div>
           </div>
         </div>
@@ -696,11 +697,11 @@ const Activitie4: FC = () => {
             />
             <div className="card-body">
               <p className="card-text">
-                At a six o'clock, cooks dinner for his family.
+                At a six o{"'"}clock, cooks dinner for his family.
               </p>
               <p>
-                At eight o'clock, Christophe plays darts with his friends in the
-                pub.
+                At eight o{"'"}clock, Christophe plays darts with his friends in
+                the pub.
               </p>
             </div>
           </div>
@@ -714,7 +715,7 @@ const Activitie4: FC = () => {
             />
             <div className="card-body">
               <p className="card-text">
-                At ten o'clock,Christophe goes home and watches television.
+                At ten o{"'"}clock,Christophe goes home and watches television.
               </p>
               <br />
               <p> He goes to bed at midnight</p>
@@ -988,21 +989,22 @@ const Activitie7: FC = () => {
           </div>
           <div className="col fs-5 card shadow mt--2 p-4">
             <p>
-              Hi, My name is Violet Parr, I'm 14 years old and I live in the
-              centre of New York. Let me introduce you to my family, I'll start
-              talking about my youngest brother (1) Jack Jack. He's only 1 years
-              old, weights only 13 kilos and his main power is shape shifting,
-              it means he can change into different forms. Then, I'll continue
-              talking about my younger brother (2) Dash. He is 10 years old but
-              he can run faster than anyone in the family but I'm stronger (3)
-              than him. He also has special powers like me. We can become
-              invisible and we have elastic arms (4) but mum says that we can't
-              use our powers unless we are in danger (5). To finish, I'll talk
-              about my parents, they are Helen and Bob Parr. My mum is 37 years
-              old and she is the most intelligent (6) in the family my dad is 39
-              and can lift (7) very heavy things so he's the strongest. We are a
-              very special family as you can see. Now, tell me about yours, I'm
-              sure that you have a have a very specialfamily too.
+              Hi, My name is Violet Parr, I{"'"}m 14 years old and I live in the
+              centre of New York. Let me introduce you to my family, I{"'"}ll
+              start talking about my youngest brother (1) Jack Jack. He{"'"}s
+              only 1 years old, weights only 13 kilos and his main power is
+              shape shifting, it means he can change into different forms. Then,
+              I{"'"}ll continue talking about my younger brother (2) Dash. He is
+              10 years old but he can run faster than anyone in the family but I
+              {"'"}m stronger (3) than him. He also has special powers like me.
+              We can become invisible and we have elastic arms (4) but mum says
+              that we can{"'"}t use our powers unless we are in danger (5). To
+              finish, I{"'"}ll talk about my parents, they are Helen and Bob
+              Parr. My mum is 37 years old and she is the most intelligent (6)
+              in the family my dad is 39 and can lift (7) very heavy things so
+              he{"'"}s the strongest. We are a very special family as you can
+              see. Now, tell me about yours, I{"'"}m sure that you have a have a
+              very specialfamily too.
             </p>
           </div>
         </div>
@@ -1288,8 +1290,8 @@ const Activitie8: FC = () => {
               My name is Lance and I am 15 years old. I am not sure what job I
               want when I am older, but I do know that I want to go to
               university. I am going to study English, Italian and Maths in Year
-              12& 13 and then go to a good university to study modern languages.
-              Maybe I will become a famous writer or artist.
+              12 & 13 and then go to a good university to study modern
+              languages. Maybe I will become a famous writer or artist.
             </div>
           </div>
         </div>
@@ -1301,8 +1303,9 @@ const Activitie8: FC = () => {
               when I am older. I love to study and will go to medical school
               when I am 20. Before this I am going to travel abroad, to Africa
               and India and work in hospitals to get some experience. I know it
-              will be difficult, but I will be strong and won't get frightened
-              or scared even if things get hard. I want to be the best!
+              will be difficult, but I will be strong and won{"'"}t get
+              frightened or scared even if things get hard. I want to be the
+              best!
             </div>
           </div>
           <div className="col d-flex justify-content-center">
@@ -1330,7 +1333,7 @@ const Activitie8: FC = () => {
               Italy when I was five and I will return there one day soon. As I
               am going to travel I will learn as many new languages as I can
               while I am at school. I really want to learn Chinese and Russian,
-              but the school doesn't teach it at the minute, although the
+              but the school doesn{"'"}t teach it at the minute, although the
               teachers say this will change soon! Sorry I forgot to say, my name
               is Laurent and I hope I will meet you on my travels in the future!
             </div>
