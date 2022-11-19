@@ -27,7 +27,9 @@ const Homework: NextPage = () => {
         <meta name="description" content="" />
       </Head>
       <div className="card card-body shadow">
-        <h1>FORUM: AFTER WORKING ON THE VIRTUAL LEARNING OBJECT:</h1>
+        <h1 className="titulitos fs-2">
+          FORUM: AFTER WORKING ON THE VIRTUAL LEARNING OBJECT:
+        </h1>
         <p>
           WHAT´S YOUR DAILY ROUTINE? DESCRIBE THE THINGS THAT YOU DO DURING THE
           DAY.
