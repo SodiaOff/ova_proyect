@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    //loader: "imgix",
-    //path: "https://SodiaOff.github.io/",
+    loader: "imgix",
+    path: "https://SodiaOff.github.io/",
   },
   webpack(config, options) {
     const { isServer } = options;
