@@ -9,6 +9,9 @@ const Chat: NextPage = () => {
         <title>OVA English - Chat</title>
         <meta name="description" content="" />
       </Head>
+      <div className="d-flex justify-content-center titulitos fs-4 mb-2">
+        CHAT OVA-ENGLISH
+      </div>
       <div
         className="container d-flex justify-content-center"
         style={{ width: "100%", height: "100vh" }}
