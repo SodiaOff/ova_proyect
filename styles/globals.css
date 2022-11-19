@@ -175,3 +175,15 @@
     background: #547fc0;
     color: white;
 }
+
+.titulitos{
+    text-decoration-line: underline;
+    color:#142e8d;
+    text-emphasis: inherit;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
