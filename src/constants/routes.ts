@@ -8,6 +8,10 @@ const routes = [
     route: "/grammar",
   },
   {
+    label: "Forum",
+    route: "/forum",
+  },
+  {
     label: "Activities",
     route: "/activities",
   },
