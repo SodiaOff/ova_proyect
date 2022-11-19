@@ -129,10 +129,11 @@ const ItemStep: FC<IItemStep> = ({ id, label, onClick, isActive }) => {
 const Activitie1: FC = () => {
   return (
     <div>
+      <div className="h2 titulitos d-flex justify-content-center">
+        SOPHIES{"'"}S DAILY ROUTINE
+      </div>
       <div className="card shadow">
-        <div className="d-flex justify-content-center">
-          <div className="h2">SOPHIES{"'"}S DAILY ROUTINE</div>
-        </div>
+        <div className="d-flex justify-content-center"></div>
       </div>
       <div className="row mt-3">
         <div className="col-4">
@@ -143,44 +144,48 @@ const Activitie1: FC = () => {
             />
           </div>
         </div>
-        <div className="col-8">
+        <div className="col-8 mb-4">
           <div className="card shadow">
             <div className="card-body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
-                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
-                molestias hic possimus dolores harum sint quam fugit. Esse
-                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
-                Suscipit tenetur ea quis tempora, impedit culpa at delectus
-                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+                Sophie is eleven years old and she lives in Brighton, England.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
-                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
-                molestias hic possimus dolores harum sint quam fugit. Esse
-                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
-                Suscipit tenetur ea quis tempora, impedit culpa at delectus
-                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+                She usually gets up at a quarter to eight, she has a shower,
+                gets dressed and then she brushes, her teeth. After that, she
+                goes downstairs and has breakfast. For breakfast she usually has
+                milk, toast and orange juice. Then she brushes her teeth again
+                because she likes them white and healty!
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
-                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
-                molestias hic possimus dolores harum sint quam fugit. Esse
-                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
-                Suscipit tenetur ea quis tempora, impedit culpa at delectus
-                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+                Then she grabs her school bag and goes to the bus stop to catch
+                the school bus. Classes start at half past eight and finish at
+                half past four. She usually has lunch at the school canteen whit
+                her schoolmates at about 12 o'clock. Her best friend is Amy and
+                Sophie always sits next to her at lunch.
+              </p>
+              <p>
+                After school she returns home and does her homework. She is a
+                very hard-working pupil and she listens to music and watches
+                television a bit.
+              </p>
+              <p>
+                At half past seven it is time for dinner. Then she usually reads
+                a book or chatswhit her parents for a while.
+              </p>
+              <p>
+                Finally, she goes to bed at about ten o'clock, but before that
+                she brushes her teeth. Sophie is a happy little girl!
               </p>
             </div>
           </div>
         </div>
       </div>
+      <div className="h3 titulitos d-flex justify-content-center">
+        ORDER SOPHIE'S DAILY ROUTINE
+      </div>
       <div className="card shadow mt-3">
-        <div className="d-flex justify-content-center">
-          <div className="h3">Order Sophies{"'"}s daily routine</div>
-        </div>
+        <div className="d-flex justify-content-center"></div>
       </div>
       <div className="row mt-4">
         <div className="col-6">
@@ -302,41 +307,61 @@ const Activitie1: FC = () => {
 const Activitie2: FC = () => {
   return (
     <div>
+      <div className="h2 titulitos d-flex justify-content-center">
+        EMMA´S DAILY ROUTINE
+      </div>
       <div className="card shadow">
-        <div className="d-flex justify-content-center">
-          <div className="h2">EMMA´S DAILY ROUTINE</div>
-        </div>
+        <div className="d-flex justify-content-center"></div>
       </div>
       <div className="row mt-3">
         <div className="col-8">
           <div className="card shadow">
             <div className="card-body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
-                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
-                molestias hic possimus dolores harum sint quam fugit. Esse
-                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
-                Suscipit tenetur ea quis tempora, impedit culpa at delectus
-                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+                Hi, my name is Emma I'm ten years old and I'm English, I Live
+                whit family in Bringhton in the south of England.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
-                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
-                molestias hic possimus dolores harum sint quam fugit. Esse
-                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
-                Suscipit tenetur ea quis tempora, impedit culpa at delectus
-                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+                My day <a className="underline">usually</a> starts quite early,
+                I always get up at 7:30 on weekdays, but weekends I Sleep an
+                hour and a half longer. When I get up, I go to the bathroom
+                first, I Wash my face to wake me up, brush my teeth and then I
+                have a shower. After that I comb my hair and get dressed, I
+                usually wear casualclothes, mainly jeans, shorts, T-shirts and
+                trainers.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                necessitatibus ad consequuntur ratione ipsam quo voluptatem eum
-                ipsa temporibus nostrum ut rerum quod, vel doloribus inventore
-                molestias hic possimus dolores harum sint quam fugit. Esse
-                eveniet itaque aspernatur ex rerum cum hic possimus repellat!
-                Suscipit tenetur ea quis tempora, impedit culpa at delectus
-                veniam dolor ducimus veritatis hic dignissimos necessitatibus?
+                I <a className="underline">always</a> have breakfast whit my mum
+                and little brother, Tommy. My dad{" "}
+                <a className="underline">never</a> has breakfast whit us because
+                he starts work early on weekdays. I usually have a bowl of
+                cornflakes whit hot milk and toast whit marmalade. Before I go
+                school, I have to walk our dog, Leo.
+              </p>
+              <p>
+                I usually walk to school beacuse I don't live my far, Classes
+                start at 8:30, I like Maths best but I'm also good at science
+                and English, I have two breaks, at 11 and at 1 o'clock, I eat
+                sandwich and drink orange juice, I also play whit my classmates
+                in the playground, School finishes at 3:30 and my dad picks me
+                up and we come back home by car. Then we have lunch together.
+              </p>
+              <p>
+                After lunch I play whit my brother for a while and then I domy
+                homework and study. Twice a week I have a basketball practice, I
+                love doing sports.
+              </p>
+              <p>
+                Before dinner I <a className="underline">sometimes</a> meet my
+                friends or watch a TV quiz, <a className="underline">seldom</a>
+                play computer game, simply find them boring, We have dinner at
+                7:30 and I <a className="underline">often</a> set table, After
+                dinner I read a book or surf the Internet for a while.
+              </p>
+              <p>
+                At 9:30 I go to the bathroom to hace a shower, brush my teeth
+                and put on my nightdress, Before I go to sleep I listen to music
+                on my MP3 player because it makes me feel relaxed.
               </p>
             </div>
           </div>
@@ -346,8 +371,8 @@ const Activitie2: FC = () => {
         </div>
       </div>
       <div className="card mt-3 shadow d-flex flex-column">
-        <h3 className="card-title align-self-center">
-          What happens at the given times
+        <h3 className="card-title align-self-center titulitos">
+          WHAT HAPPENS AT THE GIVEN TIMES
         </h3>
         <div className="card-body">
           <div className="row">
@@ -399,8 +424,8 @@ const Activitie2: FC = () => {
         </div>
       </div>
       <div className="card mt-3 shadow d-flex flex-column">
-        <h3 className="card-title align-self-center">
-          Answer the question about Emmma
+        <h3 className="card-title align-self-center titulitos">
+          ANSWER THE QUESTION ABOUT EMMMA
         </h3>
         <div className="card-body">
           <div className="row">
@@ -480,10 +505,11 @@ const Activitie3: FC = () => {
 
   return (
     <div>
+      <div className="h2 titulitos d-flex justify-content-center">
+        MY WORKING DAY
+      </div>
       <div className="card shadow">
-        <div className="d-flex justify-content-center">
-          <div className="h2">My Working Day</div>
-        </div>
+        <div className="d-flex justify-content-center"></div>
       </div>
       <div className="row mt-3">
         <div className="col-4 d-flex flex-column align-items-center">
@@ -513,14 +539,17 @@ const Activitie3: FC = () => {
               </div>
             </div>
           )}
+          <button
+            className="btn shadow mt-1 mb-4 titulitos"
+            onClick={() => setShowText(!showtext)}
+          >
+            {!showtext ? "Show" : "Hide"} text{" "}
+            <i className="fa-regular fa-circle-question"></i>
+          </button>
           <ReactAudioPlayer
             src={require("../src/assets/audio/activitie3.mp3")}
             controls
           />
-          <button className="btn mt-2" onClick={() => setShowText(!showtext)}>
-            {!showtext ? "Show" : "Hide"} text{" "}
-            <i className="fa-regular fa-circle-question"></i>
-          </button>
         </div>
         <div className="col-8">
           <div className="card shadow">
@@ -600,14 +629,15 @@ const Activitie3: FC = () => {
 const Activitie4: FC = () => {
   return (
     <div>
+      <p className="h2 titulitos d-flex justify-content-center fs-1">
+        Comics Life
+      </p>
+      <p className="d-flex justify-content-center fs-4">
+        Use the present simple tense to talk about daily routines and different
+        times of the day
+      </p>
       <div className="card shadow">
-        <div className="d-flex lh-1 flex-column justify-content-center align-items-center">
-          <p className="h2">Comics Life</p>
-          <p>
-            Use the present simple tense to talk about daily routines and
-            different times of the day
-          </p>
-        </div>
+        <div className="d-flex lh-1 flex-column justify-content-center align-items-center"></div>
       </div>
       <div className="d-flex shadow mt-4">
         <div>
@@ -620,10 +650,9 @@ const Activitie4: FC = () => {
             <div className="card-body">
               <p className="card-text">
                 Christophe gets the bus into town on Saturday morning.
-                <br />
-                <br />
-                He meets his friends in town
               </p>
+              <br />
+              <p>He meets his friends in town</p>
             </div>
           </div>
         </div>
@@ -637,10 +666,9 @@ const Activitie4: FC = () => {
             <div className="card-body">
               <p className="card-text">
                 In the morning Christophe and his friends go shopping.
-                <br />
-                <br />
-                At noon, they have lunch together
               </p>
+              <br />
+              <p>At noon, they have lunch together</p>
             </div>
           </div>
         </div>
@@ -654,10 +682,8 @@ const Activitie4: FC = () => {
             <div className="card-body">
               <p className="card-text">
                 After lunch Christophe plays football.
-                <br />
-                <br />
-                At three o{"'"}clock, he does his homework in the library.
               </p>
+              <p>At three o'clock, he does his homework in the library.</p>
             </div>
           </div>
         </div>
@@ -670,10 +696,11 @@ const Activitie4: FC = () => {
             />
             <div className="card-body">
               <p className="card-text">
-                At a six o{"'"}clock, cooks dinner for his family.
-                <br />
-                At eight o o{"'"}clock, Christophe plays darts with his friends
-                in the pub.
+                At a six o'clock, cooks dinner for his family.
+              </p>
+              <p>
+                At eight o'clock, Christophe plays darts with his friends in the
+                pub.
               </p>
             </div>
           </div>
@@ -687,10 +714,10 @@ const Activitie4: FC = () => {
             />
             <div className="card-body">
               <p className="card-text">
-                At ten o{"'"}clock,Christophe goes home and watches television.
-                <br />
-                He goes to bed at midnight
+                At ten o'clock,Christophe goes home and watches television.
               </p>
+              <br />
+              <p> He goes to bed at midnight</p>
             </div>
           </div>
         </div>
@@ -756,12 +783,8 @@ const Activitie4: FC = () => {
 const Activitie5: FC = () => {
   return (
     <div>
-      <div className="card shadow">
-        <div className="d-flex justify-content-center">
-          <div className="h4">
-            SHORT STORY TO UNDERSTAND TIME-DAILY ROUTINE-ENGLISH
-          </div>
-        </div>
+      <div className="h4 titulitos d-flex justify-content-center">
+        SHORT STORY TO UNDERSTAND TIME-DAILY ROUTINE-ENGLISH
       </div>
       <div className="card card-body shadow mt-4">
         <YouTube
@@ -862,13 +885,11 @@ const Activitie5: FC = () => {
 const Activitie6: FC = () => {
   return (
     <div>
+      <div className="h2 titulitos d-flex justify-content-center fs-3">
+        DANIEL TIGER´S DAY AND NIGHT-LEARNING DAILY MORNING AND NIGHT ROUTINES
+      </div>
       <div className="card shadow">
-        <div className="d-flex justify-content-center">
-          <div className="h5">
-            DANIEL TIGER´S DAY AND NIGHT-LEARNING DAILY MORNING AND NIGHT
-            ROUTINES
-          </div>
-        </div>
+        <div className="d-flex justify-content-center"></div>
       </div>
       <div className="card card-body shadow mt-4">
         <YouTube
@@ -900,11 +921,7 @@ const Activitie6: FC = () => {
             <MultipleOptions
               id="2"
               label="7) What does he eat for breakfast?"
-              options={[
-                "Pancakes whit strawberries",
-                "Cereal with milk",
-                "option 3",
-              ]}
+              options={["Pancakes whit strawberries", "Cereal with milk"]}
               correctOption={1}
             />
           </div>
@@ -958,15 +975,40 @@ const Activitie7: FC = () => {
 
   return (
     <div>
-      <div className="card shadow">
-        <div className="d-flex justify-content-center">
-          <div className="h5">
-            DANIEL TIGER´S DAY AND NIGHT-LEARNING DAILY MORNING AND NIGHT
-            ROUTINES
+      <div className="h2 titulitos d-flex justify-content-center mt-5">
+        THE INCREDIBLE FAMILY
+      </div>
+      <div className="container">
+        <div className="row d-flex align-items-center">
+          <div className="col d-flex justify-content-center mt--2">
+            <Image
+              src={require("../src/assets/images/Family Incredibles.png")}
+              alt="Sophie"
+            />
+          </div>
+          <div className="col fs-5 card shadow mt--2 p-4">
+            <p>
+              Hi, My name is Violet Parr, I'm 14 years old and I live in the
+              centre of New York. Let me introduce you to my family, I'll start
+              talking about my youngest brother (1) Jack Jack. He's only 1 years
+              old, weights only 13 kilos and his main power is shape shifting,
+              it means he can change into different forms. Then, I'll continue
+              talking about my younger brother (2) Dash. He is 10 years old but
+              he can run faster than anyone in the family but I'm stronger (3)
+              than him. He also has special powers like me. We can become
+              invisible and we have elastic arms (4) but mum says that we can't
+              use our powers unless we are in danger (5). To finish, I'll talk
+              about my parents, they are Helen and Bob Parr. My mum is 37 years
+              old and she is the most intelligent (6) in the family my dad is 39
+              and can lift (7) very heavy things so he's the strongest. We are a
+              very special family as you can see. Now, tell me about yours, I'm
+              sure that you have a have a very specialfamily too.
+            </p>
           </div>
         </div>
       </div>
-      <div className="card card-body shadow mt-4">
+
+      <div className="card card-body shadow mt-1">
         <div className="d-flex flex-column">
           <div className="fw-semibold lh-sm">
             1) Select number (1 - 7) in the order they appear in the text:
@@ -1224,13 +1266,15 @@ const Activitie7: FC = () => {
 const Activitie8: FC = () => {
   return (
     <div>
-      <div className="card shadow">
-        <div className="d-flex justify-content-center">
-          <div className="h5">Future plans</div>
-        </div>
+      <div className="h2 titulitos d-flex justify-content-center">
+        FUTURE PLANS
       </div>
-      <div className="mt-4 mx-5">
-        <div className="row">
+      <p className="d-flex justify-content-center mt-3 mb-3 fs-3">
+        Read what these three people want to do in the future and answer the
+        questions in full sentences.
+      </p>
+      <div className="mt-4 mx-5 ">
+        <div className="row d-flex align-items-center">
           <div className="col d-flex justify-content-center">
             <Image
               src={require("../src/assets/images/Lance.svg")}
@@ -1240,40 +1284,25 @@ const Activitie8: FC = () => {
             />
           </div>
           <div className="col">
-            <div className="card card-body shadow">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-              eveniet, ea dolores sapiente molestias, aliquam nobis possimus
-              fugiat iusto doloremque commodi voluptatum animi, asperiores iste
-              sit nemo facere explicabo voluptas eaque veritatis! Cumque
-              consequatur nobis dicta velit? Iure consectetur eligendi enim
-              harum ipsam animi omnis numquam aliquam necessitatibus commodi quo
-              recusandae pariatur distinctio nemo, explicabo, asperiores
-              voluptatum corporis mollitia? Autem, iusto id fugit tenetur alias
-              fugiat quis assumenda amet, neque, minima culpa soluta rem
-              temporibus aliquid sit deserunt ex quaerat facilis blanditiis
-              aperiam odio expedita enim. Animi impedit fuga eveniet magnam
-              sequi, aliquam accusamus aliquid voluptate unde velit distinctio
-              ab.
+            <div className="card card-body shadow fs-4">
+              My name is Lance and I am 15 years old. I am not sure what job I
+              want when I am older, but I do know that I want to go to
+              university. I am going to study English, Italian and Maths in Year
+              12& 13 and then go to a good university to study modern languages.
+              Maybe I will become a famous writer or artist.
             </div>
           </div>
         </div>
         <hr className="my-4" />
         <div className="row my-3">
-          <div className="col">
-            <div className="card card-body shadow">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-              eveniet, ea dolores sapiente molestias, aliquam nobis possimus
-              fugiat iusto doloremque commodi voluptatum animi, asperiores iste
-              sit nemo facere explicabo voluptas eaque veritatis! Cumque
-              consequatur nobis dicta velit? Iure consectetur eligendi enim
-              harum ipsam animi omnis numquam aliquam necessitatibus commodi quo
-              recusandae pariatur distinctio nemo, explicabo, asperiores
-              voluptatum corporis mollitia? Autem, iusto id fugit tenetur alias
-              fugiat quis assumenda amet, neque, minima culpa soluta rem
-              temporibus aliquid sit deserunt ex quaerat facilis blanditiis
-              aperiam odio expedita enim. Animi impedit fuga eveniet magnam
-              sequi, aliquam accusamus aliquid voluptate unde velit distinctio
-              ab.
+          <div className="col d-flex align-items-center">
+            <div className="card card-body shadow fs-4">
+              Hi, my name is Rosie. I am 17 years old. I am going to be a doctor
+              when I am older. I love to study and will go to medical school
+              when I am 20. Before this I am going to travel abroad, to Africa
+              and India and work in hospitals to get some experience. I know it
+              will be difficult, but I will be strong and won't get frightened
+              or scared even if things get hard. I want to be the best!
             </div>
           </div>
           <div className="col d-flex justify-content-center">
@@ -1286,7 +1315,7 @@ const Activitie8: FC = () => {
           </div>
         </div>
         <hr className="my-4" />
-        <div className="row">
+        <div className="row d-flex align-items-center">
           <div className="col d-flex justify-content-center">
             <Image
               src={require("../src/assets/images/Laurent.svg")}
@@ -1296,20 +1325,14 @@ const Activitie8: FC = () => {
             />
           </div>
           <div className="col">
-            <div className="card card-body shadow">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-              eveniet, ea dolores sapiente molestias, aliquam nobis possimus
-              fugiat iusto doloremque commodi voluptatum animi, asperiores iste
-              sit nemo facere explicabo voluptas eaque veritatis! Cumque
-              consequatur nobis dicta velit? Iure consectetur eligendi enim
-              harum ipsam animi omnis numquam aliquam necessitatibus commodi quo
-              recusandae pariatur distinctio nemo, explicabo, asperiores
-              voluptatum corporis mollitia? Autem, iusto id fugit tenetur alias
-              fugiat quis assumenda amet, neque, minima culpa soluta rem
-              temporibus aliquid sit deserunt ex quaerat facilis blanditiis
-              aperiam odio expedita enim. Animi impedit fuga eveniet magnam
-              sequi, aliquam accusamus aliquid voluptate unde velit distinctio
-              ab.
+            <div className="card card-body shadow fs-4">
+              When I am older I am going to travel more. I came to the UK from
+              Italy when I was five and I will return there one day soon. As I
+              am going to travel I will learn as many new languages as I can
+              while I am at school. I really want to learn Chinese and Russian,
+              but the school doesn't teach it at the minute, although the
+              teachers say this will change soon! Sorry I forgot to say, my name
+              is Laurent and I hope I will meet you on my travels in the future!
             </div>
           </div>
         </div>
