@@ -28,10 +28,6 @@ const routes = [
     route: "/icfes",
   },
   {
-    label: "Credits",
-    route: "/credits",
-  },
-  {
     label: "Chat",
     route: "/chat",
   },
