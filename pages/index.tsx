@@ -10,11 +10,11 @@ const Home: NextPage = () => {
         <title>OVA English - Introduction</title>
         <meta name="description" content="" />
       </Head>
-      <div className="row">
-        <div className="col-xl-7 col-xs-12 mb-4">
+      <div className="row ">
+        <div className="col-11 mb-4 fs-5 w-100">
           <div className="card shadow">
             <div className="card-body">
-              <h1>Introduction</h1>
+              <h1 className="titulitos">Introduction</h1>
               <p>
                 The purpose of this virtual Learning Object focuses on the
                 essential influence of reading both in the mother tongue and in
@@ -40,13 +40,30 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-5 col-xs-12">
+      </div>
+      <div className="row">
+        <div className="col-2 mb-4">
+          <div className="row p-2">
+            <YouTube
+              title="READ, PLAY AND LEARN ENGLISH ONLINE"
+              videoId="nCUhYfPRum8"
+              opts={{
+                height: "400",
+                width: "120%",
+                playerVars: {
+                  autoplay: 0,
+                },
+              }}
+            />
+          </div>
+        </div>
+        <div className="col mb-4 p-2 mx-5">
           <YouTube
-            title="OBJETO VIRTUAL DE APRENDIZAJE: READ, PLAY AND LEAR"
-            videoId="NQxlXqB3c1o"
+            title="READ, PLAY AND LEARN ONLINE"
+            videoId="NgBDxpE9Fxg"
             opts={{
-              height: "390",
-              width: "100%",
+              height: "400",
+              width: "104%",
               playerVars: {
                 autoplay: 0,
               },
