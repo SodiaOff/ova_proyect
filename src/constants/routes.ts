@@ -31,6 +31,10 @@ const routes = [
     label: "Chat",
     route: "/chat",
   },
+  {
+    label: "Meeting",
+    route: "/meeting",
+  },
 ];
 
 export { routes };
