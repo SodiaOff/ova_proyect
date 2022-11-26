@@ -4,14 +4,6 @@ const routes = [
     route: "/objetive",
   },
   {
-    label: "Grammar",
-    route: "/grammar",
-  },
-  {
-    label: "Forum",
-    route: "/forum",
-  },
-  {
     label: "Activities",
     route: "/activities",
   },
@@ -32,8 +24,16 @@ const routes = [
     route: "/chat",
   },
   {
-    label: "Meeting",
+    label: "Virtual Meeting",
     route: "/meeting",
+  },
+  {
+    label: "Forum",
+    route: "/forum",
+  },
+  {
+    label: "Grammar",
+    route: "/grammar",
   },
 ];
 
