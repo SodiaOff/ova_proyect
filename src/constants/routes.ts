@@ -35,6 +35,10 @@ const routes = [
     label: "Grammar",
     route: "/grammar",
   },
+  {
+    label: "Games",
+    route: "/games",
+  },
 ];
 
 export { routes };
